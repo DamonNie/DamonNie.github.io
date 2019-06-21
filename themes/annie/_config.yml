@@ -166,27 +166,27 @@ socialShare:
 # social
 social:
     github:
-        url: http://github.com/
+        url: http://github.com/DamonNie
         icon: fa fa-github
     weibo:
-        url: http://github.com/
+        url: http://github.com/DamonNie
         icon: fa fa-weibo    
     pinterest: 
-        url: http://github.com/
+        url: http://github.com/DamonNie
         icon: fa fa-pinterest
     instagram:
-        url: http://github.com/
+        url: http://github.com/DamonNie
         icon: fa fa-instagram
     twitter:
-        url: http://github.com/
+        url: http://github.com/DamonNie
         icon: fa fa-twitter
     rss: 
         url: /atom.xml
         icon: fa fa-rss
 
 # copyright  
-since: 2017
-cotent_author: Sariay
+since: 2019
+cotent_author: damon 
 
 #########################################################################################################
 # 006-GALLERY PAGE
