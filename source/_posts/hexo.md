@@ -537,6 +537,5 @@ height:75vh;
 效果如下：
 ![](https://user-gold-cdn.xitu.io/2019/9/18/16d43217a18fcfc6?imageView2/0/w/1280/h/960/ignore-error/1 "")
 
-引用并感谢:![闪烁之狐](https://blinkfox.github.io/)
-		   ![浅夏晴空](https://juejin.im/post/5d81d3036fb9a06b3260a901#heading-28)
+引用并感谢:[闪烁之狐](https://blinkfox.github.io/) [浅夏晴空](https://juejin.im/post/5d81d3036fb9a06b3260a901#heading-28)
 
