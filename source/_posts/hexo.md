@@ -380,10 +380,10 @@ date: 2018-09-07 09:25:00
 title: typora-vue-theme主题介绍
 date: 2018-09-07 09:25:00
 author: 赵奇
-img: /source/images/xxx.jpg
+img: /medias/images/1.jpg
 top: true
 cover: true
-coverImg: /images/1.jpg
+coverImg: /medias/images/2.jpg
 password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
 toc: false
 mathjax: false
@@ -496,6 +496,46 @@ z16：
 
 ![](https://user-gold-cdn.xitu.io/2019/9/18/16d43217e471c240?imageslim "")
 动漫人物只好不要和不蒜子一起使用，不然不蒜子会显示不出来。
+### 404页面
+原来的主题没有404页面，首先在`/source/`目录下新建一个`404.md`，内容如下：
+```
+---
+title:404
+date:2017-07-1916:41:10
+type:"404"
+layout:"404"
+description:"你访问的页面被外星人叼走了 :("
+---
+```
+
+/themes/matery/layout/`目录下新建一个`404.ejs`文件，内容如下：
+```
+<styletype="text/css">/* don"t remove. */
+.about-cover {
+height:75vh;
+    }</style>
+
+<divclass="bg-cover pd-header about-cover">
+    <divclass="container">
+        <divclass="row">
+            <divclass="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+                <divclass="brand">
+                    <divclass="title center-align">
+                        404
+</div>
+                    <divclass="description center-align">
+<%=page.description %>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>// 每天切换 banner 图.  Switch banner image every day.
+    $(".bg-cover").css("background-image","url(/medias/banner/" +newDate().getDay() +".jpg)");</script>
+```
+效果如下：
+![](https://user-gold-cdn.xitu.io/2019/9/18/16d43217a18fcfc6?imageView2/0/w/1280/h/960/ignore-error/1 "")
 
 引用并感谢:![闪烁之狐](https://blinkfox.github.io/)
 		   ![浅夏晴空](https://juejin.im/post/5d81d3036fb9a06b3260a901#heading-28)
