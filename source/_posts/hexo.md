@@ -498,7 +498,7 @@ z16：
 动漫人物只好不要和不蒜子一起使用，不然不蒜子会显示不出来。
 ### 404页面
 原来的主题没有404页面，首先在`/source/`目录下新建一个`404.md`，内容如下：
-```
+```yaml
 ---
 title:404
 date:2017-07-1916:41:10
@@ -507,35 +507,40 @@ layout:"404"
 description:"你访问的页面被外星人叼走了 :("
 ---
 ```
-
 /themes/matery/layout/`目录下新建一个`404.ejs`文件，内容如下：
-```
-<styletype="text/css">/* don"t remove. */
-.about-cover {
-height:75vh;
-    }</style>
 
-<divclass="bg-cover pd-header about-cover">
-    <divclass="container">
-        <divclass="row">
-            <divclass="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-                <divclass="brand">
-                    <divclass="title center-align">
-                        404
+```javascript
+<style type="text/css">
+    /* don't remove. */
+  .about-cover {
+          height: 75vh;
+        }
+</style>
+
+<div class="bg-cover pd-header about-cover">
+  <div class="container">
+    <div class="row">
+      <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+          <div class="title center-align">
+            404
+          </div>
+          <div class="description center-align">
+            <%= page.description %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-                    <divclass="description center-align">
-<%=page.description %>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<script>// 每天切换 banner 图.  Switch banner image every day.
-    $(".bg-cover").css("background-image","url(/medias/banner/" +newDate().getDay() +".jpg)");</script>
+<script>
+  // 每天切换 banner 图.  Switch banner image every day.
+      $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+</script>
+
 ```
 效果如下：
-![](https://user-gold-cdn.xitu.io/2019/9/18/16d43217a18fcfc6?imageView2/0/w/1280/h/960/ignore-error/1 "")
+![demo](https://user-gold-cdn.xitu.io/2019/9/18/16d43217a18fcfc6?imageView2/0/w/1280/h/960/ignore-error/1)
 
-引用并感谢:[闪烁之狐](https://blinkfox.github.io/) [浅夏晴空](https://juejin.im/post/5d81d3036fb9a06b3260a901#heading-28)
+引用并感谢:[闪烁之狐](https://blinkfox.github.io/) [浅夏晴空](https://gongchenghuigch.github.io/2019/09/09/theme/)
 
