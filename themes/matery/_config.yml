@@ -43,8 +43,8 @@ menu:
 # 站点运行开始时间.
 time:
   enable: true
-  year: 2019 # 年份
-  month: 06 # 月份
+  year: 2018 # 年份
+  month: 09 # 月份
   date: 28 # 日期
   hour: 00 # 小时
   minute: 00 # 分钟
@@ -76,7 +76,7 @@ music:
   showTitle: true
   title: 听听音乐
   fixed: false # 开启吸底模式
-  autoplay: false # 是否自动播放
+  autoplay: true # 是否自动播放
   theme: '#42b983'
   loop: 'all' # 音频循环播放, 可选值: 'all', 'one', 'none'
   order: 'list' # 音频循环顺序, 可选值: 'list', 'random'
@@ -122,7 +122,7 @@ indexbtn:
   enable: true
   name: Github
   icon: fab fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/damonnie/hexo-theme-matery
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
@@ -151,7 +151,7 @@ toc:
 code:
   lang: true # 代码块是否显示名称
   copy: true # 代码块是否可复制
-  shrink: true # 代码块是否可以收缩
+  shrink: false # 代码块是否可以收缩
   break: false # 代码是否折行
 
 # 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
@@ -201,13 +201,13 @@ clicklove:
 profile:
   avatar: /medias/avatar.jpg
   career: Software Engineer
-  introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
+  introduction: 做工程师不做码农
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myProjects:
-  enable: true
+  enable: false
   data:
     hexo-theme-matery:
       icon: fas fa-file-alt
@@ -229,7 +229,7 @@ myProjects:
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 mySkills:
-  enable: true
+  enable: false
   data:
     Java:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
@@ -316,7 +316,7 @@ valine:
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: true
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/damonnie/hexo-theme-matery
   title: Fork Me
 
 # The password verification feature of read post. To use this feature,
@@ -340,7 +340,7 @@ busuanziStatistics:
 # Add google analytics configuration
 # 添加 Google Analytics 配置
 googleAnalytics:
-  enable: false
+  enable: true
   id:
 
 # Add baidu analytics configuration
@@ -491,8 +491,8 @@ subtitle:
   startDelay: 300 # 开始延迟
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
-  sub1: 从来没有真正的绝境, 只有心灵的迷途
-  sub2: Never really desperate, only the lost of the soul
+  sub1: 从来没有真正的绝境, 只有心灵的迷途 #Never really desperate, only the lost of the soul
+  sub2: 有事做，有人爱，有所期待
 
 # 手机二级菜单.
 navMenu:

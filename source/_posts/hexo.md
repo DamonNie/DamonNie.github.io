@@ -539,8 +539,9 @@ description:"你访问的页面被外星人叼走了 :("
 </script>
 
 ```
+
 效果如下：
-![demo](https://user-gold-cdn.xitu.io/2019/9/18/16d43217a18fcfc6?imageView2/0/w/1280/h/960/ignore-error/1)
+ ![效果图](https://user-gold-cdn.xitu.io/2019/9/18/16d43217a18fcfc6?imageView2/0/w/1280/h/960/ignore-error/1)
 
 引用并感谢:[闪烁之狐](https://blinkfox.github.io/) [浅夏晴空](https://gongchenghuigch.github.io/2019/09/09/theme/)
 
