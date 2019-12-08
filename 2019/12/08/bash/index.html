@@ -4,17 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="细数平时工作中用到的git命令, hexo,damon,github">
-    <meta name="description" content="git基本操作命令添加git仓库git init
-git remote add origin &amp;lt;origin地址&gt;
-或者
-git clone &amp;lt;origin地址&gt;
-git分支管理
-查看分支列表
+    <meta name="keywords" content="常用的Bash命令(一), hexo,damon,github">
+    <meta name="description" content="1、hostname - 查看主机名hostname 命令用于查看系统的主机名，亦或修改系统的主机名hostname 的常用命令如下:
+# 显示系统的当前主机名
+hostname
 
-git branch -a
-
-创">
+#修改系统的主机名
+hostname damon-syst">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +18,7 @@ git branch -a
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>细数平时工作中用到的git命令 | damon&#39;s blog</title>
+    <title>常用的Bash命令(一) | damon&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,13 +309,13 @@ git branch -a
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        细数平时工作中用到的git命令
+                        常用的Bash命令(一)
                     </div>
                 </div>
             </div>
@@ -437,8 +433,8 @@ git branch -a
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/git/">
-                                <span class="chip bg-color">git</span>
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
                             </a>
                         
                     </div>
@@ -449,8 +445,8 @@ git branch -a
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/git/" class="post-category">
-                                git
+                            <a href="/categories/linux/" class="post-category">
+                                linux
                             </a>
                         
                     </div>
@@ -462,7 +458,7 @@ git branch -a
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-06
+                    2019-12-08
                 </div>
                 
 
@@ -471,14 +467,14 @@ git branch -a
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    581
+                    420
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 				
@@ -494,94 +490,62 @@ git branch -a
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="git基本操作命令"><a href="#git基本操作命令" class="headerlink" title="git基本操作命令"></a><strong>git基本操作命令</strong></h2><h3 id="添加git仓库"><a href="#添加git仓库" class="headerlink" title="添加git仓库"></a>添加git仓库</h3><pre class=" language-html"><code class="language-html">git init
-git remote add origin <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>origin地址</span><span class="token punctuation">></span></span></code></pre>
-<p>或者</p>
-<pre class=" language-html"><code class="language-html">git clone <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>origin地址</span><span class="token punctuation">></span></span></code></pre>
-<h3 id="git分支管理"><a href="#git分支管理" class="headerlink" title="git分支管理"></a>git分支管理</h3><blockquote>
-<p>查看分支列表</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git branch -a</code></pre>
-<blockquote>
-<p>创建新分支</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git branch <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>branch名称</span><span class="token punctuation">></span></span></code></pre>
-<blockquote>
-<p>切换分支</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git check <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>branch名称</span><span class="token punctuation">></span></span></code></pre>
-<p>然后，上面两个命令也可以合成为一个命令</p>
-<pre class=" language-html"><code class="language-html">git checkout -b <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>branch名称</span><span class="token punctuation">></span></span> ,</code></pre>
-<p>这里经常有使用到git checkout -b origin &lt;branch名称&gt;，创建本地分支并拉取远程到本地</p>
-<h3 id="git使用"><a href="#git使用" class="headerlink" title="git使用"></a>git使用</h3><blockquote>
-<p>查看仓库有变化文件</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git status</code></pre>
-<blockquote>
-<p>添加文件到索引库</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git add <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>file带路径的名称</span><span class="token punctuation">></span></span></code></pre>
-<p>这里使用git add .,提交当前库中有变化的文件到索引库中</p>
-<blockquote>
-<p>提交added状态的文件，即添加到索引库中的文件</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git commit -m '<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>注释</span><span class="token punctuation">></span></span>'</code></pre>
-<blockquote>
-<p>提交远程仓库</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git push origin <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>branch名称</span><span class="token punctuation">></span></span></code></pre>
-<p>这里如果当前分支只有一个追踪分支，git push即可。远程主机名可以忽略</p>
-<blockquote>
-<p>拉取分支更新文件</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git pull origin <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>branch名称</span><span class="token punctuation">></span></span></code></pre>
-<p>如果当前分支与主机存在追踪关系，git pull origin即可。如果只有一个追踪分支，远程主机名忽略 git pull即可</p>
-<blockquote>
-<p>删除分支</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git branch -d <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>branch名称</span><span class="token punctuation">></span></span></code></pre>
-<p>如若要删除远程分支，git push –delete origin &lt;branch名称&gt;</p>
-<h3 id="git合并"><a href="#git合并" class="headerlink" title="git合并"></a>git合并</h3><blockquote>
-<p>合并分支<br>示例一:将分支master合并到当前分支中，但不要自动进行新的提交</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git merge --no-commit master</code></pre>
-<p>示例二:合并到当前分支中，保留分支提交记录不自动提交</p>
-<pre class=" language-html"><code class="language-html">git merge --no-ff master</code></pre>
-<p>示例三:合并到当期分支,自动进行提交</p>
-<pre class=" language-html"><code class="language-html">git merge master</code></pre>
-<blockquote>
-<p>合并冲突</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">setp1:更新并拉取远程到本地
-git fetch origin
-git checkout -b origin/master
+                <h2 id="1、hostname-查看主机名"><a href="#1、hostname-查看主机名" class="headerlink" title="1、hostname - 查看主机名"></a>1、hostname - 查看主机名</h2><p><code>hostname</code> 命令用于查看系统的主机名，亦或修改系统的主机名<br><code>hostname</code> 的常用命令如下:</p>
+<pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 显示系统的当前主机名</span>
+hostname
 
-step2:切换拉取远程需被合并的分支，如已切换作pull操作
-git checkout -b origin <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>branch名称</span><span class="token punctuation">></span></span>
+<span class="token comment" spellcheck="true">#修改系统的主机名</span>
+hostname damon<span class="token punctuation">-</span>system</code></pre>
+<h2 id="2、uptime-查看系统运行时间"><a href="#2、uptime-查看系统运行时间" class="headerlink" title="2、uptime - 查看系统运行时间"></a>2、uptime - 查看系统运行时间</h2><pre class=" language-yaml"><code class="language-yaml">uptime</code></pre>
+<h2 id="3、who-列出登录的用户"><a href="#3、who-列出登录的用户" class="headerlink" title="3、who - 列出登录的用户"></a>3、who - 列出登录的用户</h2><pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 显示当前登录的所有用户信息</span>
+who
 
-step3:示例二操作，合并master到当前分支 不提交
-git merge --no-ff master
+<span class="token comment" spellcheck="true"># 显示系统的启动时间</span>
+who <span class="token punctuation">-</span>b
 
-step4:推送到远程主机
-git push origin <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>branch名称</span><span class="token punctuation">></span></span></code></pre>
-<h3 id="git小知识"><a href="#git小知识" class="headerlink" title="git小知识"></a>git小知识</h3><blockquote>
-<p>查看日志提交记录</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git log</code></pre>
-<blockquote>
-<p>查看尚未暂存的文件更新了哪些部分</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git diff <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>带路径的file</span><span class="token punctuation">></span></span></code></pre>
-<blockquote>
-<p>删除文件</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git rm -r <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>带路径的file</span><span class="token punctuation">></span></span></code></pre>
-<blockquote>
-<p>标签</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html">git tag </code></pre>
-<p>创建标签则带参数-a，git tag -a &lt;tag名称&gt;</p>
-<h2 id="git进阶篇"><a href="#git进阶篇" class="headerlink" title="git进阶篇"></a>git进阶篇</h2><p><a href="https://github.com/DamonNie/git-Submodule" target="_blank" rel="noopener">git子模块</a></p>
+<span class="token comment" spellcheck="true"># 显示系统登录进程</span>
+who <span class="token punctuation">-</span>l
+
+<span class="token comment" spellcheck="true"># 显示当前登录用户关联的用户信息</span>
+who <span class="token punctuation">-</span>m
+
+<span class="token comment" spellcheck="true"># 显示所有登录用户的用户名和用户数</span>
+who <span class="token punctuation">-</span>q</code></pre>
+<h2 id="4、uname-查看系统信息"><a href="#4、uname-查看系统信息" class="headerlink" title="4、uname - 查看系统信息"></a>4、uname - 查看系统信息</h2><p><code>uname</code>命令用于打印内核名称和版本、主机名等系统信息。命令的语法如下所示：</p>
+<pre class=" language-yaml"><code class="language-yaml"> <span class="token comment" spellcheck="true"># 只打印内核的名称</span>
+ uname
+
+ <span class="token comment" spellcheck="true"># 使用 -n 选项，只打印系统的主机名</span>
+ uname <span class="token punctuation">-</span>n
+
+ <span class="token comment" spellcheck="true"># 使用 -r 选项，打印内核版本信息</span>
+ uname <span class="token punctuation">-</span>r
+
+ <span class="token comment" spellcheck="true"># 使用 -m 选项，打印系统的硬件名称</span>
+ uname <span class="token punctuation">-</span>m
+
+ <span class="token comment" spellcheck="true"># 使用 -p 选项，打印系统的处理器类型信息</span>
+ uname <span class="token punctuation">-</span>p
+
+ <span class="token comment" spellcheck="true"># 使用 -i 选项，打印系统的硬件平台信息</span>
+ uname <span class="token punctuation">-</span>i
+
+ <span class="token comment" spellcheck="true"># 使用 -a 选项，打印上述所有示例中的信息</span>
+ uname <span class="token punctuation">-</span>a</code></pre>
+<h2 id="5、date-显示系统时间"><a href="#5、date-显示系统时间" class="headerlink" title="5、date - 显示系统时间"></a>5、date - 显示系统时间</h2><pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 以默认格式显示系统的当前日期时间</span>
+date
+
+<span class="token comment" spellcheck="true"># 格式化当前日期</span>
+date +"%Y<span class="token punctuation">-</span>%m<span class="token punctuation">-</span>%d"</code></pre>
+<h2 id="6、-id-显示用户属性"><a href="#6、-id-显示用户属性" class="headerlink" title="6、 id - 显示用户属性"></a>6、 id - 显示用户属性</h2><pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 输出当前用户的uid、用户名、gid、组名及用户属于的群组信息</span>
+id
+
+<span class="token comment" spellcheck="true"># 使用 -u 选项，输出用户的 uid</span>
+id <span class="token punctuation">-</span>u
+
+<span class="token comment" spellcheck="true">#-u 选项和 -n 选项结合使用，输出账户的用户名</span>
+id <span class="token punctuation">-</span>un</code></pre>
+<p>引用：<a href="https://blinkfox.github.io/2018/10/13/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-qi-ta-chang-yong-ming-ling/" target="_blank" rel="noopener">常用Bash命令整理之其他常用命令</a></p>
 
             </div>
             <hr/>
@@ -607,7 +571,7 @@ git push origin <span class="token tag"><span class="token tag"><span class="tok
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://damonnie.github.io/2019/12/06/git/">http://damonnie.github.io/2019/12/06/git/</a>
+                    <a href="http://damonnie.github.io/2019/12/08/bash/">http://damonnie.github.io/2019/12/08/bash/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -645,8 +609,8 @@ git push origin <span class="token tag"><span class="token tag"><span class="tok
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/git/">
-                                    <span class="chip bg-color">git</span>
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
                                 </a>
                             
                         </div>
@@ -812,9 +776,65 @@ git push origin <span class="token tag"><span class="token tag"><span class="tok
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2019/12/08/bash/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="常用的Bash命令(一)">
+                        
+                        <span class="card-title">常用的Bash命令(一)</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            1、hostname - 查看主机名hostname 命令用于查看系统的主机名，亦或修改系统的主机名hostname 的常用命令如下:
+# 显示系统的当前主机名
+hostname
+
+#修改系统的主机名
+hostname damon-syst
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2019/12/08/bash2/">
                     <div class="card-image">
@@ -837,9 +857,9 @@ git push origin <span class="token tag"><span class="token tag"><span class="tok
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -857,64 +877,6 @@ git push origin <span class="token tag"><span class="token tag"><span class="tok
                     
                     <a href="/tags/linux/">
                         <span class="chip bg-color">linux</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/12/06/git-submodule/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="使用 Git Submodule 管理项目">
-                        
-                        <span class="card-title">使用 Git Submodule 管理项目</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            前言Pending
-使用场景基于公司的项目会越来越多，常常需要提取一个公共的类库提供给多个项目使用，但是这个library怎么和git在一起方便管理呢？
-我们需要解决下面几个问题：
-
-如何在git项目中导入library库?
-  answe
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-06
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/git/" class="post-category">
-                                    git
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
-                    </a>
-                    
-                    <a href="/tags/git-submodule/">
-                        <span class="chip bg-color">git submodule</span>
                     </a>
                     
                 </div>
