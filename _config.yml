@@ -4,7 +4,7 @@
 
 # Site
 title: damon's blog 
-subtitle: ''
+subtitle: 'dmaon的家园'
 description: '欢迎来到我的主页'
 keywords: hexo,damon,github
 author: damon
@@ -134,8 +134,8 @@ live2d:
     use: live2d-widget-model-shizuku
   display: 
     position: right 
-    width: 300 
-    height: 500 
+    width: 200 
+    height: 400 
   mobile: 
     show: true 
     react: 
