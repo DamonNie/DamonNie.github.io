@@ -473,7 +473,7 @@ Material Design 设计
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.9k
+                    3.8k
                 </div>
                 
 
@@ -859,37 +859,44 @@ Material Design 设计
 <p><img src="https://user-gold-cdn.xitu.io/2019/9/18/16d43217e3c25e0a?imageslim" alt=""><br>z16：</p>
 <p><img src="https://user-gold-cdn.xitu.io/2019/9/18/16d43217e471c240?imageslim" alt=""><br>动漫人物只好不要和不蒜子一起使用，不然不蒜子会显示不出来。</p>
 <h3 id="404页面"><a href="#404页面" class="headerlink" title="404页面"></a>404页面</h3><p>原来的主题没有404页面，首先在<code>/source/</code>目录下新建一个<code>404.md</code>，内容如下：</p>
-<pre><code>---
-title:404
-date:2017-07-1916:41:10
-type:&quot;404&quot;
-layout:&quot;404&quot;
-description:&quot;你访问的页面被外星人叼走了 :(&quot;
----</code></pre><p>/themes/matery/layout/<code>目录下新建一个</code>404.ejs`文件，内容如下：</p>
-<pre><code>&lt;styletype=&quot;text/css&quot;&gt;/* don&quot;t remove. */
-.about-cover {
-height:75vh;
-    }&lt;/style&gt;
+<pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+title<span class="token punctuation">:</span><span class="token number">404</span>
+date<span class="token punctuation">:</span>2017<span class="token punctuation">-</span>07<span class="token punctuation">-</span>1916<span class="token punctuation">:</span><span class="token datetime number">41:10</span>
+type<span class="token punctuation">:</span><span class="token string">"404"</span>
+layout<span class="token punctuation">:</span><span class="token string">"404"</span>
+description<span class="token punctuation">:</span><span class="token string">"你访问的页面被外星人叼走了 :("</span>
+<span class="token punctuation">---</span></code></pre>
+<p>/themes/matery/layout/<code>目录下新建一个</code>404.ejs`文件，内容如下：</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>style type<span class="token operator">=</span><span class="token string">"text/css"</span><span class="token operator">></span>
+    <span class="token comment" spellcheck="true">/* don't remove. */</span>
+  <span class="token punctuation">.</span>about<span class="token operator">-</span>cover <span class="token punctuation">{</span>
+          height<span class="token punctuation">:</span> 75vh<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">></span>
 
-&lt;divclass=&quot;bg-cover pd-header about-cover&quot;&gt;
-    &lt;divclass=&quot;container&quot;&gt;
-        &lt;divclass=&quot;row&quot;&gt;
-            &lt;divclass=&quot;col s10 offset-s1 m8 offset-m2 l8 offset-l2&quot;&gt;
-                &lt;divclass=&quot;brand&quot;&gt;
-                    &lt;divclass=&quot;title center-align&quot;&gt;
-                        404
-&lt;/div&gt;
-                    &lt;divclass=&quot;description center-align&quot;&gt;
-&lt;%=page.description %&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;// 每天切换 banner 图.  Switch banner image every day.
-    $(&quot;.bg-cover&quot;).css(&quot;background-image&quot;,&quot;url(/medias/banner/&quot; +newDate().getDay() +&quot;.jpg)&quot;);&lt;/script&gt;</code></pre><p>效果如下：<br><img src="https://user-gold-cdn.xitu.io/2019/9/18/16d43217a18fcfc6?imageView2/0/w/1280/h/960/ignore-error/1" alt=""></p>
-<p>引用并感谢:<a href="https://blinkfox.github.io/" target="_blank" rel="noopener">闪烁之狐</a> <a href="https://juejin.im/post/5d81d3036fb9a06b3260a901#heading-28" target="_blank" rel="noopener">浅夏晴空</a></p>
+<span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"bg-cover pd-header about-cover"</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"container"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"row"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"col s10 offset-s1 m8 offset-m2 l8 offset-l2"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"brand"</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"title center-align"</span><span class="token operator">></span>
+            <span class="token number">404</span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"description center-align"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">=</span> page<span class="token punctuation">.</span>description <span class="token operator">%</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">&lt;</span>script<span class="token operator">></span>
+  <span class="token comment" spellcheck="true">// 每天切换 banner 图.  Switch banner image every day.</span>
+      <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.bg-cover'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">'background-image'</span><span class="token punctuation">,</span> <span class="token string">'url(/medias/banner/'</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.jpg)'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+</code></pre>
+<p>效果如下：<br> <img src="https://user-gold-cdn.xitu.io/2019/9/18/16d43217a18fcfc6?imageView2/0/w/1280/h/960/ignore-error/1" alt="效果图"></p>
+<p>引用并感谢:<a href="https://blinkfox.github.io/" target="_blank" rel="noopener">闪烁之狐</a> <a href="https://gongchenghuigch.github.io/2019/09/09/theme/" target="_blank" rel="noopener">浅夏晴空</a></p>
 
             </div>
             <hr/>
@@ -1128,32 +1135,53 @@ height:75vh;
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/12/05/hello-world/">
+                <a href="/2018/12/06/git-submodule/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="使用 Git Submodule 管理项目">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">使用 Git Submodule 管理项目</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            前言Pending
+使用场景基于公司的项目会越来越多，常常需要提取一个公共的类库提供给多个项目使用，但是这个library怎么和git在一起方便管理呢？
+我们需要解决下面几个问题：
+
+如何在git项目中导入library库?
+  answe
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2018-12-06
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            damon
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/git/" class="post-category">
+                                    git
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
+                    <a href="/tags/git-submodule/">
+                        <span class="chip bg-color">git submodule</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1241,8 +1269,6 @@ Material Design 设计
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1362,7 +1388,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.9k</span>&nbsp;字
+                class="white-color">5.9k</span>&nbsp;字
             
             
             
@@ -1392,8 +1418,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     var days = hours * 24;
                     var years = days * 365;
                     var today = new Date();
-                    var startYear = "2019";
-                    var startMonth = "6";
+                    var startYear = "2018";
+                    var startMonth = "09";
                     var startDate = "28";
                     var startHour = "0";
                     var startMinute = "0";
@@ -1545,6 +1571,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true,"react":null,"opacity":0.7}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":300,"height":500},"mobile":{"show":true,"react":null,"opacity":0.7}});</script></body>
 
 </html>

@@ -40,11 +40,68 @@
   </entry>
   
   <entry>
+    <title>细数平时工作中用到的git命令</title>
+    <link href="http://damonnie.github.io/2018/12/06/git/"/>
+    <id>http://damonnie.github.io/2018/12/06/git/</id>
+    <published>2018-12-06T05:34:00.000Z</published>
+    <updated>2019-12-06T13:07:18.024Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;git基本操作命令&quot;&gt;&lt;a href=&quot;#git基本操作命令&quot; class=&quot;headerlink&quot; title=&quot;git基本操作命令&quot;&gt;&lt;/a&gt;&lt;strong&gt;git基本操作命令&lt;/strong&gt;&lt;/h2&gt;&lt;h3 id=&quot;添加git仓库&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://damonnie.github.io/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://damonnie.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Git Submodule 管理项目</title>
+    <link href="http://damonnie.github.io/2018/12/06/git-submodule/"/>
+    <id>http://damonnie.github.io/2018/12/06/git-submodule/</id>
+    <published>2018-12-06T05:34:00.000Z</published>
+    <updated>2019-12-06T13:07:18.023Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;&lt;strong&gt;前言&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;Pending&lt;/p&gt;
+&lt;h2 id=&quot;使用场景&quot;&gt;&lt;a href=&quot;#使用场景&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://damonnie.github.io/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://damonnie.github.io/tags/git/"/>
+    
+      <category term="git submodule" scheme="http://damonnie.github.io/tags/git-submodule/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo博客主题之hexo-theme-matery的介绍</title>
     <link href="http://damonnie.github.io/2018/09/28/hexo/"/>
     <id>http://damonnie.github.io/2018/09/28/hexo/</id>
     <published>2018-09-28T05:34:00.000Z</published>
-    <updated>2019-12-05T15:41:02.335Z</updated>
+    <updated>2019-12-08T02:42:04.460Z</updated>
     
     <summary type="html">
     
