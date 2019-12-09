@@ -1,6 +1,7 @@
 ---
 title: 细数平时工作中用到的git命令
 date: 2019-12-06 13:34:00
+top: true
 author: damon
 cover: true
 categories: git
@@ -115,12 +116,31 @@ git diff <带路径的file>
 ```html
 git rm -r <带路径的file>
 ```
+> 查看当前本地分支与远程分支的关联
+```html
+git branch -v
+```
 > 标签
 ```html
 git tag 
 ```
 创建标签则带参数-a，git tag -a <tag名称>
 
+> git pull 或者git push有时候会出现此提示
+```bash
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
 
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+```
+done:
+```git
+git branch --set-upstream-to=origin/<远程分支名字>
+```
 ## git进阶篇
 [git子模块](https://github.com/DamonNie/git-Submodule)
