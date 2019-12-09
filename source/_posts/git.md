@@ -1,6 +1,6 @@
 ---
 title: 细数平时工作中用到的git命令
-date: 2019-12-06 13:34:00
+date: 2018-12-06 13:34:00
 top: true
 author: damon
 cover: true

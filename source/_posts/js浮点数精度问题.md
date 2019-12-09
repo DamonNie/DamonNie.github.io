@@ -2,7 +2,7 @@
 title: js浮点数精度问题
 top: true
 cover: false
-date: 2019-12-09 11:38:13
+date: 2018-12-09 11:38:13
 password:
 summary:
 tags:
