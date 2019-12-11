@@ -87,7 +87,7 @@ git merge --no-ff master
 ```html
 git merge master
 ```
-> 合并冲突
+> 合并冲突解决
 ```html
 setp1:更新并拉取远程到本地
 git fetch origin
@@ -108,9 +108,19 @@ git push origin <branch名称>
 ```html
 git log
 ```
+> 还在工作区，并未进入暂存区可以执行撤销操作
+```html
+>git checkout .
+
+>git reset --hard
+```
 > 查看尚未暂存的文件更新了哪些部分
 ```html
 git diff <带路径的file>
+```
+> 查看暂存区和本地仓库之间的差异
+```html
+git diff --cached
 ```
 > 删除文件
 ```html
