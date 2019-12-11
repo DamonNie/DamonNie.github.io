@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>damon&#39;s blog</title>
   
-  <subtitle>damon的家园</subtitle>
+  <subtitle>独立思考，要求甚解</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://damonnie.github.io/"/>
-  <updated>2019-12-08T15:06:50.660Z</updated>
+  <updated>2019-12-11T15:38:34.642Z</updated>
   <id>http://damonnie.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown基本语法</title>
+    <link href="http://damonnie.github.io/2019/12/11/markdown/"/>
+    <id>http://damonnie.github.io/2019/12/11/markdown/</id>
+    <published>2019-12-11T15:24:51.000Z</published>
+    <updated>2019-12-11T15:38:34.642Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Markdown是一种纯文本格式的标记语言。简单的标记语法，是它作为众多文档编写语言选择的优点之一&quot;&gt;&lt;a href=&quot;#Markdown是一种纯文本格式的标记语言。简单的标记语法，是它作为众多文档编写语言选择的优点之一&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="markdown" scheme="http://damonnie.github.io/categories/markdown/"/>
+    
+    
+      <category term="markdown" scheme="http://damonnie.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用的Bash命令(三) 文本处理</title>
+    <link href="http://damonnie.github.io/2019/12/10/bash3/"/>
+    <id>http://damonnie.github.io/2019/12/10/bash3/</id>
+    <published>2019-12-10T11:26:18.000Z</published>
+    <updated>2019-12-11T14:59:48.787Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1、sort-排序文件&quot;&gt;&lt;a href=&quot;#1、sort-排序文件&quot; class=&quot;headerlink&quot; title=&quot;1、sort - 排序文件&quot;&gt;&lt;/a&gt;1、sort - 排序文件&lt;/h2&gt;&lt;p&gt;&lt;code&gt;sort&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="http://damonnie.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="http://damonnie.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>常用的Bash命令(一)</title>
@@ -71,38 +125,11 @@
   </entry>
   
   <entry>
-    <title>细数平时工作中用到的git命令</title>
-    <link href="http://damonnie.github.io/2019/12/06/git/"/>
-    <id>http://damonnie.github.io/2019/12/06/git/</id>
-    <published>2019-12-06T05:34:00.000Z</published>
-    <updated>2019-12-08T03:58:49.363Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;git基本操作命令&quot;&gt;&lt;a href=&quot;#git基本操作命令&quot; class=&quot;headerlink&quot; title=&quot;git基本操作命令&quot;&gt;&lt;/a&gt;&lt;strong&gt;git基本操作命令&lt;/strong&gt;&lt;/h2&gt;&lt;h3 id=&quot;添加git仓库&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="git" scheme="http://damonnie.github.io/categories/git/"/>
-    
-    
-      <category term="git" scheme="http://damonnie.github.io/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
     <title>使用 Git Submodule 管理项目</title>
     <link href="http://damonnie.github.io/2019/12/06/git-submodule/"/>
     <id>http://damonnie.github.io/2019/12/06/git-submodule/</id>
     <published>2019-12-06T05:34:00.000Z</published>
-    <updated>2019-12-08T03:52:48.767Z</updated>
+    <updated>2019-12-11T14:59:48.790Z</updated>
     
     <summary type="html">
     
@@ -128,11 +155,11 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://damonnie.github.io/2019/12/05/hello-world/"/>
-    <id>http://damonnie.github.io/2019/12/05/hello-world/</id>
-    <published>2019-12-05T15:01:54.193Z</published>
-    <updated>2019-12-08T03:55:03.325Z</updated>
+    <title>js浮点数精度问题</title>
+    <link href="http://damonnie.github.io/2018/12/09/js-fu-dian-shu-jing-du-wen-ti/"/>
+    <id>http://damonnie.github.io/2018/12/09/js-fu-dian-shu-jing-du-wen-ti/</id>
+    <published>2018-12-09T03:38:13.000Z</published>
+    <updated>2019-12-11T14:59:48.793Z</updated>
     
     <summary type="html">
     
@@ -140,13 +167,44 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;h1 id=&quot;JS中浮点数精度问题&quot;&gt;&lt;a href=&quot;#JS中浮点数精度问题&quot; class=&quot;headerlink&quot; title=&quot;JS中浮点数精度问题&quot;&gt;&lt;/a&gt;JS中浮点数精度问题&lt;/h1&gt;&lt;p&gt; 
         
       
     
     </summary>
     
     
+      <category term="前端" scheme="http://damonnie.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="javascript" scheme="http://damonnie.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>细数平时工作中用到的git命令</title>
+    <link href="http://damonnie.github.io/2018/12/06/git/"/>
+    <id>http://damonnie.github.io/2018/12/06/git/</id>
+    <published>2018-12-06T05:34:00.000Z</published>
+    <updated>2019-12-11T14:59:48.791Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;git基本操作命令&quot;&gt;&lt;a href=&quot;#git基本操作命令&quot; class=&quot;headerlink&quot; title=&quot;git基本操作命令&quot;&gt;&lt;/a&gt;&lt;strong&gt;git基本操作命令&lt;/strong&gt;&lt;/h2&gt;&lt;h3 id=&quot;添加git仓库&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://damonnie.github.io/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://damonnie.github.io/tags/git/"/>
     
   </entry>
   

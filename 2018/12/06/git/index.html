@@ -113,17 +113,6 @@ git branch -a
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
     <a href="/friends" class="waves-effect waves-light">
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
@@ -209,17 +198,6 @@ git branch -a
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
 			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			Contact
 		</a>
           
         </li>
@@ -462,7 +440,7 @@ git branch -a
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-06
+                    2018-12-06
                 </div>
                 
 
@@ -471,14 +449,14 @@ git branch -a
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    581
+                    728
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
 				
@@ -550,7 +528,7 @@ git remote add origin <span class="token tag"><span class="token tag"><span clas
 <p>示例三:合并到当期分支,自动进行提交</p>
 <pre class=" language-html"><code class="language-html">git merge master</code></pre>
 <blockquote>
-<p>合并冲突</p>
+<p>合并冲突解决</p>
 </blockquote>
 <pre class=" language-html"><code class="language-html">setp1:更新并拉取远程到本地
 git fetch origin
@@ -569,18 +547,46 @@ git push origin <span class="token tag"><span class="token tag"><span class="tok
 </blockquote>
 <pre class=" language-html"><code class="language-html">git log</code></pre>
 <blockquote>
+<p>还在工作区，并未进入暂存区可以执行撤销操作</p>
+</blockquote>
+<pre class=" language-html"><code class="language-html">>git checkout .
+
+>git reset --hard</code></pre>
+<blockquote>
 <p>查看尚未暂存的文件更新了哪些部分</p>
 </blockquote>
 <pre class=" language-html"><code class="language-html">git diff <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>带路径的file</span><span class="token punctuation">></span></span></code></pre>
+<blockquote>
+<p>查看暂存区和本地仓库之间的差异</p>
+</blockquote>
+<pre class=" language-html"><code class="language-html">git diff --cached</code></pre>
 <blockquote>
 <p>删除文件</p>
 </blockquote>
 <pre class=" language-html"><code class="language-html">git rm -r <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>带路径的file</span><span class="token punctuation">></span></span></code></pre>
 <blockquote>
+<p>查看当前本地分支与远程分支的关联</p>
+</blockquote>
+<pre class=" language-html"><code class="language-html">git branch -v</code></pre>
+<blockquote>
 <p>标签</p>
 </blockquote>
 <pre class=" language-html"><code class="language-html">git tag </code></pre>
 <p>创建标签则带参数-a，git tag -a &lt;tag名称&gt;</p>
+<blockquote>
+<p>git pull 或者git push有时候会出现此提示</p>
+</blockquote>
+<pre class=" language-bash"><code class="language-bash">There is no tracking information <span class="token keyword">for</span> the current branch.
+Please specify <span class="token function">which</span> branch you want to merge with.
+See git-pull<span class="token punctuation">(</span>1<span class="token punctuation">)</span> <span class="token keyword">for</span> details.
+
+    <span class="token function">git</span> pull <span class="token operator">&lt;</span>remote<span class="token operator">></span> <span class="token operator">&lt;</span>branch<span class="token operator">></span>
+
+If you wish to <span class="token keyword">set</span> tracking information <span class="token keyword">for</span> this branch you can <span class="token keyword">do</span> so with:
+
+    <span class="token function">git</span> branch --set-upstream-to<span class="token operator">=</span>origin/<span class="token operator">&lt;</span>branch<span class="token operator">></span> master</code></pre>
+<p>done:</p>
+<pre class=" language-git"><code class="language-git">git branch --set-upstream-to=origin/&lt;远程分支名字></code></pre>
 <h2 id="git进阶篇"><a href="#git进阶篇" class="headerlink" title="git进阶篇"></a>git进阶篇</h2><p><a href="https://github.com/DamonNie/git-Submodule" target="_blank" rel="noopener">git子模块</a></p>
 
             </div>
@@ -607,7 +613,7 @@ git push origin <span class="token tag"><span class="token tag"><span class="tok
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://damonnie.github.io/2019/12/06/git/">http://damonnie.github.io/2019/12/06/git/</a>
+                    <a href="http://damonnie.github.io/2018/12/06/git/">http://damonnie.github.io/2018/12/06/git/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -816,36 +822,33 @@ git push origin <span class="token tag"><span class="token tag"><span class="tok
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/12/08/bash2/">
+                <a href="/2018/12/09/js-fu-dian-shu-jing-du-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="常用的Bash命令(二) 文件管理">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="js浮点数精度问题">
                         
-                        <span class="card-title">常用的Bash命令(二) 文件管理</span>
+                        <span class="card-title">js浮点数精度问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、touch - 创建文件touch 命令就可用于创建、变更和修改文件的时间戳。
--a: 只改变访问时间 
--c: 不创建任何文件
--m: 只改变修改时间
--r: 使用指定文件的时间替代当前时间
--t: 使用 [[CC]YY]MMDDhh
+                            JS中浮点数精度问题  最近在做项目的时候，有遇到js的精度问题。在掘金上找了个比较完整的解决方案，特此深入学习了一些 收藏一下并分享给友友们。以下是方案解决内容:
+问题的发现  总结了一下，一共有以下两种问题
+浮点数运算后的精度问题  在
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2018-12-09
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/linux/" class="post-category">
-                                    linux
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
@@ -855,8 +858,8 @@ git push origin <span class="token tag"><span class="token tag"><span class="tok
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/linux/">
-                        <span class="chip bg-color">linux</span>
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
                     </a>
                     
                 </div>
@@ -870,36 +873,38 @@ git push origin <span class="token tag"><span class="token tag"><span class="tok
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/06/git-submodule/">
+                <a href="/2018/09/28/hexo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="使用 Git Submodule 管理项目">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Hexo博客主题之hexo-theme-matery的介绍">
                         
-                        <span class="card-title">使用 Git Submodule 管理项目</span>
+                        <span class="card-title">Hexo博客主题之hexo-theme-matery的介绍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言Pending
-使用场景基于公司的项目会越来越多，常常需要提取一个公共的类库提供给多个项目使用，但是这个library怎么和git在一起方便管理呢？
-我们需要解决下面几个问题：
+                            
+这是一个采用Material Design和响应式设计的 Hexo 博客主题。
 
-如何在git项目中导入library库?
-  answe
+特性
+简单漂亮，文章内容美观易读
+Material Design 设计
+响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现
+首页轮播文章及每天动态切
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/git/" class="post-category">
-                                    git
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
@@ -909,12 +914,12 @@ git push origin <span class="token tag"><span class="token tag"><span class="tok
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
                     </a>
                     
-                    <a href="/tags/git-submodule/">
-                        <span class="chip bg-color">git submodule</span>
+                    <a href="/tags/hexo-theme-matery/">
+                        <span class="chip bg-color">hexo-theme-matery</span>
                     </a>
                     
                 </div>
@@ -1062,7 +1067,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.1k</span>&nbsp;字
+                class="white-color">10.9k</span>&nbsp;字
             
             
             
