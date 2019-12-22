@@ -140,4 +140,37 @@ find ~ -type f -size 50MB
 find ~ -type f -size +50MB -size -100MB
 ```
 
+## 10、awk - 查找文件
+```yaml
+用法一:
+awk '{[pattern] action}' {filenames}   # 行匹配语句 awk '' 只能用单引号
+# 每行按空格或TAB分割，输出文本中的1、4项
+awk '{print $1,$4}' log.txt
+
+用法二:
+awk -F  #-F相当于内置变量FS, 指定分割字符
+
+用法三:
+awk -v  # 设置变量
+实例：
+
+用法四:
+awk -f {awk脚本} {文件名}
+实例：awk -f cal.awk log.txt
+```
+### 进阶篇：
+查询一个日志文件中访问次数最多前10个IP？
+
+第一步：按照IP进行将记录排序。
+
+第二步：按照IP去重，并且显示重复次数
+
+第三步：按照次数升序排列
+
+第四步：显示前10行
+
+awk '{print $1}' log.txt | sort | uniq -c | sort -n -r | head -n 10
+
+
+
 参考：[常用Bash命令整理之文本处理](https://blinkfox.github.io/2018/10/11/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-wen-ben-chu-li/)[常用Bash命令整理之查看文件和目录](https://blinkfox.github.io/2018/10/09/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-cha-kan-wen-jian-he-mu-lu/)
