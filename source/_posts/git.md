@@ -152,5 +152,11 @@ done:
 ```git
 git branch --set-upstream-to=origin/<远程分支名字>
 ```
+>git 回滚到之前某提交commit-id
+```
+git reset --hard commit-id :回滚到commit-id，讲commit-id之后提交的commit都去除
+git reset --hard HEAD~3：将最近3次的提交回滚
+```
+
 ## git进阶篇
 [git子模块](https://github.com/DamonNie/git-Submodule)

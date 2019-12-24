@@ -75,6 +75,12 @@ php -r "unlink('composer-setup.php');"
 
 *注意：使用`composer install`或者`composer update`命令将会更新所有的扩展包，项目中使用需谨慎！！！*
 
+### 切换国内镜像
+仅当前工程可使用该镜像地址：
+`composer config repo.packagist composer https://mirrors.aliyun.com/composer/`
+取消配置：
+`composer config --unset repos.packagist`
+
 ### 命令汇总
 ```
 composer list  列出所有可用的命令
