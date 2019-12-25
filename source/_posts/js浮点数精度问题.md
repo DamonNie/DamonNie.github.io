@@ -4,7 +4,7 @@ top: true
 cover: false
 date: 2018-12-09 11:38:13
 password:
-summary:
+summary: 对于js的精度问题，这里提出了一个比较完整的解决方案。
 tags:
  - javascript
 categories: 前端

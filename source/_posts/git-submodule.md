@@ -4,6 +4,7 @@ date: 2019-12-06 13:34:00
 author: damon
 cover: true
 categories: git
+summary: Git Submodule,子模块是一个很好的多项目使用共同类库的工具
 tags:
   - git submodule
   - git

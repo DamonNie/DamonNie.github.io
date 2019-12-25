@@ -4,7 +4,7 @@ top: false
 cover: false
 date: 2019-12-22 16:40:54
 password:
-summary:
+summary: 常用的Bash命令-系统管理,有top netstat等
 tags: 
  - linux
 categories: linux

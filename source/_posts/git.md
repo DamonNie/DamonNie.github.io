@@ -5,6 +5,7 @@ top: true
 author: damon
 cover: true
 categories: git
+summary: git比较很方便的管理代码版本，同时也是团队协作开发必备的工具之一
 tags:
   - git
 ---

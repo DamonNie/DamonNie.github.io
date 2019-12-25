@@ -4,7 +4,7 @@ top: false
 cover: false
 date: 2019-12-08 22:37:02
 password:
-summary:
+summary: touch、mv、cp等命令是操作文件、文件目录最基础的命令
 tags: 
  - linux
 categories: linux

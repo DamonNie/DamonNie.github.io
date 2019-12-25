@@ -4,7 +4,7 @@ top: false
 cover: false
 date: 2019-12-08 22:37:02
 password:
-summary:
+summary: 学会hostname、uname等命令可以查看操作主机系统名
 tags: 
  - linux
 categories: linux

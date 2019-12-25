@@ -4,6 +4,7 @@ date: 2018-09-28 13:34:00
 author: damon
 cover: true
 categories: 前端
+summary: 这是一篇采用`Material Design`和响应式设计的 Hexo 博客主题的文章介绍。
 tags:
   - Hexo
   - hexo-theme-matery

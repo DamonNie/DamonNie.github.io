@@ -4,7 +4,7 @@ top: false
 cover: false
 date: 2019-12-10 19:26:18
 password:
-summary:
+summary: 文本处理命令，是最基本也是平时日常使用频率较多的
 tags: 
  - linux
 categories: linux
