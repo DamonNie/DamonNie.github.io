@@ -444,14 +444,14 @@ sort example.txt
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    5 分
                 </div>
                 
 				
@@ -506,14 +506,7 @@ cat /etc/group
 <span class="token punctuation">-</span><span class="token key atrule">n</span><span class="token punctuation">:</span> 显示行号
 <span class="token punctuation">-</span><span class="token key atrule">b</span><span class="token punctuation">:</span> 只显示非空白行的行号
 <span class="token punctuation">-</span><span class="token key atrule">e</span><span class="token punctuation">:</span> 在每一行的结尾显示“$”字符</code></pre>
-<h2 id="6、cat-显示文件内容"><a href="#6、cat-显示文件内容" class="headerlink" title="6、cat - 显示文件内容"></a>6、cat - 显示文件内容</h2><p><code>cat</code> 查看文件的内容、连接文件、创建一个或多个文件和重定向输出到终端或文件。</p>
-<pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 使用 cat 命令查看文件 /etc/group 的内容</span>
-cat /etc/group
-
-<span class="token punctuation">-</span><span class="token key atrule">n</span><span class="token punctuation">:</span> 显示行号
-<span class="token punctuation">-</span><span class="token key atrule">b</span><span class="token punctuation">:</span> 只显示非空白行的行号
-<span class="token punctuation">-</span><span class="token key atrule">e</span><span class="token punctuation">:</span> 在每一行的结尾显示“$”字符</code></pre>
-<h2 id="7、less、more-分屏显示文件"><a href="#7、less、more-分屏显示文件" class="headerlink" title="7、less、more - 分屏显示文件"></a>7、less、more - 分屏显示文件</h2><p><code>more</code> 用于一次翻阅一整屏文件的过滤器。<br><code>less</code> 与’more’命令类似，但是支持向前和向后翻页。</p>
+<h2 id="6、less、more-分屏显示文件"><a href="#6、less、more-分屏显示文件" class="headerlink" title="6、less、more - 分屏显示文件"></a>6、less、more - 分屏显示文件</h2><p><code>more</code> 用于一次翻阅一整屏文件的过滤器。<br><code>less</code> 与’more’命令类似，但是支持向前和向后翻页。</p>
 <pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 查看一个文件，自动清空屏幕并显示文件开头部分</span>
 more /etc/inittab
 
@@ -536,7 +529,7 @@ h  显示帮助界面
 Q  退出less 命令
 空格键 滚动一行
 回车键 滚动一页</code></pre>
-<h2 id="8、tail、head-显示文件头部、尾部"><a href="#8、tail、head-显示文件头部、尾部" class="headerlink" title="8、tail、head 显示文件头部、尾部"></a>8、tail、head 显示文件头部、尾部</h2><pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 指定打印文件的前/后5行</span>
+<h2 id="7、tail、head-显示文件头部、尾部"><a href="#7、tail、head-显示文件头部、尾部" class="headerlink" title="7、tail、head 显示文件头部、尾部"></a>7、tail、head 显示文件头部、尾部</h2><pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 指定打印文件的前/后5行</span>
 <span class="token punctuation">-</span>n 5 &lt;file<span class="token punctuation">></span>
 <span class="token punctuation">-</span>5 &lt;file<span class="token punctuation">></span>
 <span class="token comment" spellcheck="true">#  打印文件的前/后N个字节的数据</span>
@@ -544,7 +537,7 @@ Q  退出less 命令
 <span class="token comment" spellcheck="true"># 及时跟新打印的文件数据(适用于tail)</span>
 <span class="token punctuation">-</span>f
 <span class="token punctuation">-</span>f <span class="token punctuation">-</span><span class="token punctuation">-</span>retry 稍后才会创建</code></pre>
-<h2 id="9、wc-查看文件统计信息"><a href="#9、wc-查看文件统计信息" class="headerlink" title="9、wc - 查看文件统计信息"></a>9、wc - 查看文件统计信息</h2><p><code>wc</code>命令用于查看文件的行数、单词数和字符数等信息。</p>
+<h2 id="8、wc-查看文件统计信息"><a href="#8、wc-查看文件统计信息" class="headerlink" title="8、wc - 查看文件统计信息"></a>8、wc - 查看文件统计信息</h2><p><code>wc</code>命令用于查看文件的行数、单词数和字符数等信息。</p>
 <pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 其中X表示行数，Y表示单词数，Z表示字节数，filename表示文件名。</span>
 wc filename
 X Y Z /etc/inittab
@@ -553,7 +546,7 @@ X Y Z /etc/inittab
 <span class="token punctuation">-</span>w 只统计文件的单词数信息(单词个数)
 <span class="token punctuation">-</span>c 只统计文件的字节数信息(字节byte数)
 <span class="token punctuation">-</span>L 只统计文件中最长的行的长度</code></pre>
-<h2 id="10、find-查找文件或目录"><a href="#10、find-查找文件或目录" class="headerlink" title="10、find - 查找文件或目录"></a>10、find - 查找文件或目录</h2><pre class=" language-yaml"><code class="language-yaml">以下列出常用的几种场景命令：
+<h2 id="9、find-查找文件或目录"><a href="#9、find-查找文件或目录" class="headerlink" title="9、find - 查找文件或目录"></a>9、find - 查找文件或目录</h2><pre class=" language-yaml"><code class="language-yaml">以下列出常用的几种场景命令：
 <span class="token comment" spellcheck="true"># 在当前目录下查找名称为 inittab 的文件</span>
 find . <span class="token punctuation">-</span>name inittab
 
@@ -571,6 +564,27 @@ find ~ <span class="token punctuation">-</span>type f <span class="token punctua
 
 <span class="token comment" spellcheck="true"># 找出你账号主目录下，大于50MB小于100MB的所有文件</span>
 find ~ <span class="token punctuation">-</span>type f <span class="token punctuation">-</span>size +50MB <span class="token punctuation">-</span>size <span class="token punctuation">-</span>100MB</code></pre>
+<h2 id="10、awk-查找文件"><a href="#10、awk-查找文件" class="headerlink" title="10、awk - 查找文件"></a>10、awk - 查找文件</h2><pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">用法一</span><span class="token punctuation">:</span>
+awk '<span class="token punctuation">{</span><span class="token punctuation">[</span>pattern<span class="token punctuation">]</span> action<span class="token punctuation">}</span>' <span class="token punctuation">{</span>filenames<span class="token punctuation">}</span>   <span class="token comment" spellcheck="true"># 行匹配语句 awk '' 只能用单引号</span>
+<span class="token comment" spellcheck="true"># 每行按空格或TAB分割，输出文本中的1、4项</span>
+awk '<span class="token punctuation">{</span>print $1<span class="token punctuation">,</span>$4<span class="token punctuation">}</span>' log.txt
+
+<span class="token key atrule">用法二</span><span class="token punctuation">:</span>
+awk <span class="token punctuation">-</span>F  <span class="token comment" spellcheck="true">#-F相当于内置变量FS, 指定分割字符</span>
+
+<span class="token key atrule">用法三</span><span class="token punctuation">:</span>
+awk <span class="token punctuation">-</span>v  <span class="token comment" spellcheck="true"># 设置变量</span>
+实例：
+
+<span class="token key atrule">用法四</span><span class="token punctuation">:</span>
+awk <span class="token punctuation">-</span>f <span class="token punctuation">{</span>awk脚本<span class="token punctuation">}</span> <span class="token punctuation">{</span>文件名<span class="token punctuation">}</span>
+实例：awk <span class="token punctuation">-</span>f cal.awk log.txt</code></pre>
+<h3 id="进阶篇："><a href="#进阶篇：" class="headerlink" title="进阶篇："></a>进阶篇：</h3><p>查询一个日志文件中访问次数最多前10个IP？</p>
+<p>第一步：按照IP进行将记录排序。</p>
+<p>第二步：按照IP去重，并且显示重复次数</p>
+<p>第三步：按照次数升序排列</p>
+<p>第四步：显示前10行</p>
+<p>awk ‘{print $1}’ log.txt | sort | uniq -c | sort -n -r | head -n 10</p>
 <p>参考：<a href="https://blinkfox.github.io/2018/10/11/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-wen-ben-chu-li/" target="_blank" rel="noopener">常用Bash命令整理之文本处理</a><a href="https://blinkfox.github.io/2018/10/09/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-cha-kan-wen-jian-he-mu-lu/" target="_blank" rel="noopener">常用Bash命令整理之查看文件和目录</a></p>
 
             </div>
@@ -806,19 +820,19 @@ find ~ <span class="token punctuation">-</span>type f <span class="token punctua
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/12/11/markdown/">
+                <a href="/2019/12/11/chang-yong-ruan-jian-gong-ju-he-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Markdown基本语法">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="常用软件工具合集">
                         
-                        <span class="card-title">Markdown基本语法</span>
+                        <span class="card-title">常用软件工具合集</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            熟悉Markdown语法是作为一个高级程序开发必备的条件
+                            收藏一些好用的工具,不定期更新
                         
                     </div>
                     <div class="publish-info">
@@ -829,8 +843,8 @@ find ~ <span class="token punctuation">-</span>type f <span class="token punctua
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/markdown/" class="post-category">
-                                    markdown
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    软件工具
                                 </a>
                             
                             
@@ -840,8 +854,8 @@ find ~ <span class="token punctuation">-</span>type f <span class="token punctua
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/markdown/">
-                        <span class="chip bg-color">markdown</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/">
+                        <span class="chip bg-color">软件工具</span>
                     </a>
                     
                 </div>
@@ -855,24 +869,19 @@ find ~ <span class="token punctuation">-</span>type f <span class="token punctua
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/08/bash/">
+                <a href="/2019/12/08/bash2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="常用的Bash命令(一)">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="常用的Bash命令(二) 文件管理">
                         
-                        <span class="card-title">常用的Bash命令(一)</span>
+                        <span class="card-title">常用的Bash命令(二) 文件管理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、hostname - 查看主机名hostname 命令用于查看系统的主机名，亦或修改系统的主机名hostname 的常用命令如下:
-# 显示系统的当前主机名
-hostname
-
-#修改系统的主机名
-hostname damon-syst
+                            touch、mv、cp等命令是操作文件、文件目录最基础的命令
                         
                     </div>
                     <div class="publish-info">
@@ -1043,7 +1052,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">10.9k</span>&nbsp;字
+                class="white-color">19.2k</span>&nbsp;字
             
             
             

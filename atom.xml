@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://damonnie.github.io/"/>
-  <updated>2019-12-11T15:38:34.642Z</updated>
+  <updated>2020-02-20T12:53:18.408Z</updated>
   <id>http://damonnie.github.io/</id>
   
   <author>
@@ -15,6 +15,254 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>php反射</title>
+    <link href="http://damonnie.github.io/2020/02/18/php-fan-she/"/>
+    <id>http://damonnie.github.io/2020/02/18/php-fan-she/</id>
+    <published>2020-02-18T14:54:15.000Z</published>
+    <updated>2020-02-20T12:53:18.408Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;PHP5 具有完整的反射
+        
+      
+    
+    </summary>
+    
+    
+      <category term="后端" scheme="http://damonnie.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>死磕设计模式-依赖注入和控制反转</title>
+    <link href="http://damonnie.github.io/2020/01/12/si-ke-she-ji-mo-shi-yi-lai-zhu-ru-he-kong-zhi-fan-zhuan/"/>
+    <id>http://damonnie.github.io/2020/01/12/si-ke-she-ji-mo-shi-yi-lai-zhu-ru-he-kong-zhi-fan-zhuan/</id>
+    <published>2020-01-12T04:11:54.000Z</published>
+    <updated>2020-02-07T12:17:44.509Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;IOC容器-Laravel的核心&quot;&gt;&lt;a href=&quot;#IOC容器-Laravel的核心&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="后端" scheme="http://damonnie.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="设计模式" scheme="http://damonnie.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>死磕设计模式-观察者模式</title>
+    <link href="http://damonnie.github.io/2020/01/10/si-ke-she-ji-mo-shi-guan-cha-zhe-mo-shi/"/>
+    <id>http://damonnie.github.io/2020/01/10/si-ke-she-ji-mo-shi-guan-cha-zhe-mo-shi/</id>
+    <published>2020-01-10T11:18:34.000Z</published>
+    <updated>2020-02-04T10:10:55.606Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;观察者模式&quot;&gt;&lt;a href=&quot;#观察者模式&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="后端" scheme="http://damonnie.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="设计模式" scheme="http://damonnie.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Http状态码大全</title>
+    <link href="http://damonnie.github.io/2020/01/03/http-zhuang-tai-ma-da-quan/"/>
+    <id>http://damonnie.github.io/2020/01/03/http-zhuang-tai-ma-da-quan/</id>
+    <published>2020-01-03T13:31:30.000Z</published>
+    <updated>2020-01-05T13:24:00.373Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;lt;?php&lt;br&gt;// This can be found in the Symfony\Component\HttpFoundation\Response class&lt;br&gt;const HTTP_CONTINUE = 100;&lt;br&gt;const
+        
+      
+    
+    </summary>
+    
+    
+      <category term="后端" scheme="http://damonnie.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="http" scheme="http://damonnie.github.io/tags/http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>laravel实现Form表单场景验证</title>
+    <link href="http://damonnie.github.io/2019/12/27/laravel-shi-xian-form-biao-dan-chang-jing-yan-zheng/"/>
+    <id>http://damonnie.github.io/2019/12/27/laravel-shi-xian-form-biao-dan-chang-jing-yan-zheng/</id>
+    <published>2019-12-27T04:59:54.000Z</published>
+    <updated>2019-12-30T16:12:35.250Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;Laravel没有Tp5那样的form表单验证场景，根据自己理解封装了一个类方法来实现他&lt;/p&gt;
+&lt;h2 id=&quot;认知了解&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="后端" scheme="http://damonnie.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="laravel" scheme="http://damonnie.github.io/tags/laravel/"/>
+    
+      <category term="场景验证" scheme="http://damonnie.github.io/tags/%E5%9C%BA%E6%99%AF%E9%AA%8C%E8%AF%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用的Bash命令四-系统管理</title>
+    <link href="http://damonnie.github.io/2019/12/22/chang-yong-de-bash-ming-ling-si-xi-tong-guan-li/"/>
+    <id>http://damonnie.github.io/2019/12/22/chang-yong-de-bash-ming-ling-si-xi-tong-guan-li/</id>
+    <published>2019-12-22T08:40:54.000Z</published>
+    <updated>2019-12-26T23:37:05.200Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1、top-显示-process-的动态&quot;&gt;&lt;a href=&quot;#1、top-显示-process-的动态&quot; class=&quot;headerlink&quot; title=&quot;1、top - 显示 process 的动态&quot;&gt;&lt;/a&gt;1、top - 显示 process
+        
+      
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="http://damonnie.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="http://damonnie.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对Composer的认识</title>
+    <link href="http://damonnie.github.io/2019/12/12/dui-composer-de-ren-shi/"/>
+    <id>http://damonnie.github.io/2019/12/12/dui-composer-de-ren-shi/</id>
+    <published>2019-12-12T12:50:00.000Z</published>
+    <updated>2019-12-26T23:37:05.199Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/medias/tmp/composer.jpg&quot; alt=&quot;composer&quot;&gt;&lt;br&gt;引自Composer中文网的描述：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;是 PHP
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程之道" scheme="http://damonnie.github.io/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+    
+      <category term="composer" scheme="http://damonnie.github.io/tags/composer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>死磕设计模式-工厂模式</title>
+    <link href="http://damonnie.github.io/2019/12/11/si-ke-she-ji-mo-shi-gong-han-mo-shi/"/>
+    <id>http://damonnie.github.io/2019/12/11/si-ke-she-ji-mo-shi-gong-han-mo-shi/</id>
+    <published>2019-12-11T15:43:14.000Z</published>
+    <updated>2019-12-26T23:37:05.207Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;根据抽象程度不同，PHP工厂模式分为：&lt;em&gt;简单工厂模式、工厂方法模式和抽象工厂模式&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;简单工厂模式&quot;&gt;&lt;a href=&quot;#简单工厂模式&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="后端" scheme="http://damonnie.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="设计模式" scheme="http://damonnie.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>死磕设计模式-单例模式</title>
+    <link href="http://damonnie.github.io/2019/12/11/si-ke-she-ji-mo-shi-dan-li-mo-shi/"/>
+    <id>http://damonnie.github.io/2019/12/11/si-ke-she-ji-mo-shi-dan-li-mo-shi/</id>
+    <published>2019-12-11T15:42:53.000Z</published>
+    <updated>2019-12-26T23:37:05.205Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;单例模式有以下4个特点&quot;&gt;&lt;a href=&quot;#单例模式有以下4个特点&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="后端" scheme="http://damonnie.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="设计模式" scheme="http://damonnie.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown基本语法</title>
@@ -44,11 +292,38 @@
   </entry>
   
   <entry>
+    <title>常用软件工具合集</title>
+    <link href="http://damonnie.github.io/2019/12/11/chang-yong-ruan-jian-gong-ju-he-ji/"/>
+    <id>http://damonnie.github.io/2019/12/11/chang-yong-ruan-jian-gong-ju-he-ji/</id>
+    <published>2019-12-11T14:50:25.000Z</published>
+    <updated>2019-12-26T23:37:05.203Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;开发神器-Vscode工具&quot;&gt;&lt;a href=&quot;#开发神器-Vscode工具&quot; class=&quot;headerlink&quot; title=&quot;开发神器-Vscode工具&quot;&gt;&lt;/a&gt;开发神器-Vscode工具&lt;/h2&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件工具" scheme="http://damonnie.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="软件工具" scheme="http://damonnie.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>常用的Bash命令(三) 文本处理</title>
     <link href="http://damonnie.github.io/2019/12/10/bash3/"/>
     <id>http://damonnie.github.io/2019/12/10/bash3/</id>
     <published>2019-12-10T11:26:18.000Z</published>
-    <updated>2019-12-11T14:59:48.787Z</updated>
+    <updated>2019-12-26T23:37:05.188Z</updated>
     
     <summary type="html">
     
@@ -71,38 +346,11 @@
   </entry>
   
   <entry>
-    <title>常用的Bash命令(一)</title>
-    <link href="http://damonnie.github.io/2019/12/08/bash/"/>
-    <id>http://damonnie.github.io/2019/12/08/bash/</id>
-    <published>2019-12-08T14:37:02.000Z</published>
-    <updated>2019-12-08T15:06:50.660Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;1、hostname-查看主机名&quot;&gt;&lt;a href=&quot;#1、hostname-查看主机名&quot; class=&quot;headerlink&quot; title=&quot;1、hostname - 查看主机名&quot;&gt;&lt;/a&gt;1、hostname -
-        
-      
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="http://damonnie.github.io/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="http://damonnie.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title>常用的Bash命令(二) 文件管理</title>
     <link href="http://damonnie.github.io/2019/12/08/bash2/"/>
     <id>http://damonnie.github.io/2019/12/08/bash2/</id>
     <published>2019-12-08T14:37:02.000Z</published>
-    <updated>2019-12-08T15:29:44.798Z</updated>
+    <updated>2019-12-26T23:37:05.185Z</updated>
     
     <summary type="html">
     
@@ -125,11 +373,38 @@
   </entry>
   
   <entry>
+    <title>常用的Bash命令(一)</title>
+    <link href="http://damonnie.github.io/2019/12/08/bash/"/>
+    <id>http://damonnie.github.io/2019/12/08/bash/</id>
+    <published>2019-12-08T14:37:02.000Z</published>
+    <updated>2019-12-26T23:37:05.182Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1、hostname-查看主机名&quot;&gt;&lt;a href=&quot;#1、hostname-查看主机名&quot; class=&quot;headerlink&quot; title=&quot;1、hostname - 查看主机名&quot;&gt;&lt;/a&gt;1、hostname -
+        
+      
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="http://damonnie.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="http://damonnie.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用 Git Submodule 管理项目</title>
     <link href="http://damonnie.github.io/2019/12/06/git-submodule/"/>
     <id>http://damonnie.github.io/2019/12/06/git-submodule/</id>
     <published>2019-12-06T05:34:00.000Z</published>
-    <updated>2019-12-11T14:59:48.790Z</updated>
+    <updated>2019-12-26T23:37:05.190Z</updated>
     
     <summary type="html">
     
@@ -159,7 +434,7 @@
     <link href="http://damonnie.github.io/2018/12/09/js-fu-dian-shu-jing-du-wen-ti/"/>
     <id>http://damonnie.github.io/2018/12/09/js-fu-dian-shu-jing-du-wen-ti/</id>
     <published>2018-12-09T03:38:13.000Z</published>
-    <updated>2019-12-11T14:59:48.793Z</updated>
+    <updated>2019-12-26T23:37:05.197Z</updated>
     
     <summary type="html">
     
@@ -186,7 +461,7 @@
     <link href="http://damonnie.github.io/2018/12/06/git/"/>
     <id>http://damonnie.github.io/2018/12/06/git/</id>
     <published>2018-12-06T05:34:00.000Z</published>
-    <updated>2019-12-11T14:59:48.791Z</updated>
+    <updated>2019-12-26T23:37:05.193Z</updated>
     
     <summary type="html">
     
@@ -213,7 +488,7 @@
     <link href="http://damonnie.github.io/2018/09/28/hexo/"/>
     <id>http://damonnie.github.io/2018/09/28/hexo/</id>
     <published>2018-09-28T05:34:00.000Z</published>
-    <updated>2019-12-08T02:42:04.460Z</updated>
+    <updated>2019-12-26T23:37:05.195Z</updated>
     
     <summary type="html">
     
