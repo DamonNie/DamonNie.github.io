@@ -45,7 +45,7 @@ class Container{
                     if ($class) { 
                         $di_params[] = new $class->name;
                     }
-            } 
+            }
         }
         $di_params = array_merge($di_params,$param);
         //通过参数$di_params创建一个新的类实例。
