@@ -4,10 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="对Composer的认识, hexo,damon,github">
-    <meta name="description" content="引自Composer中文网的描述：
+    <meta name="keywords" content="如何写出让人生厌的烂代码, hexo,damon,github">
+    <meta name="description" content="灵魂拷问
+你有担⼼过别⼈看到你代码会骂你吗？
 
-是 PHP 用来管理依赖（dependency）关系的工具。你可以在自己的项目中声明所依赖的外部工具库（libraries），Composer 会帮你安装这些依赖的库文件。我们今天就来认识以下Compo">
+
+如果你对此毫不在意，那么恭喜你，成为我们为你设定的一套”shiftcode”规则。如果你严格按照此规则进行编码，你会获得一个肯定：Good代码遵循改规则的示例，Bad表示没遵循该规则的示例。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>对Composer的认识 | damon&#39;s blog</title>
+    <title>如何写出让人生厌的烂代码 | damon&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -284,13 +286,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        对Composer的认识
+                        如何写出让人生厌的烂代码
                     </div>
                 </div>
             </div>
@@ -408,8 +410,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/composer/">
-                                <span class="chip bg-color">composer</span>
+                            <a href="/tags/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/">
+                                <span class="chip bg-color">编程之道</span>
                             </a>
                         
                     </div>
@@ -433,7 +435,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-12
+                    2020-02-23
                 </div>
                 
 
@@ -465,64 +467,173 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="/medias/tmp/composer.jpg" alt="composer"><br>引自Composer中文网的描述：</p>
-<blockquote>
-<p>是 PHP 用来管理依赖（dependency）关系的工具。你可以在自己的项目中声明所依赖的外部工具库（libraries），Composer 会帮你安装这些依赖的库文件。<br>我们今天就来认识以下<code>Composer</code></p>
+                <h2 id="灵魂拷问"><a href="#灵魂拷问" class="headerlink" title="灵魂拷问"></a>灵魂拷问</h2><blockquote>
+<p>你有担⼼过别⼈看到你代码会骂你吗？</p>
 </blockquote>
-<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h2 id="在说composer之前，我们先来了解一下什么组件。因为组件和composer之间密切相关，要想知道composer是如何工作的，我们要先清楚什么是组件。"><a href="#在说composer之前，我们先来了解一下什么组件。因为组件和composer之间密切相关，要想知道composer是如何工作的，我们要先清楚什么是组件。" class="headerlink" title="在说composer之前，我们先来了解一下什么组件。因为组件和composer之间密切相关，要想知道composer是如何工作的，我们要先清楚什么是组件。"></a>在说composer之前，我们先来了解一下什么组件。因为组件和composer之间密切相关，要想知道composer是如何工作的，我们要先清楚什么是组件。</h2><h3 id="什么是组件"><a href="#什么是组件" class="headerlink" title="什么是组件"></a>什么是组件</h3><p>组件是打包的代码，用于我们在实际项目中解决某个问题。组件适用于某个场景下使用，比如：在导入导出时候会碰到各种不同业务场景下的功能需求，直接调用excel组件的类库代码，便可自定义使用，十分方便</p>
-<h3 id="为什么要使用组件"><a href="#为什么要使用组件" class="headerlink" title="为什么要使用组件"></a>为什么要使用组件</h3><p>避免重复造轮子</p>
-<h3 id="组件的特点"><a href="#组件的特点" class="headerlink" title="组件的特点"></a>组件的特点</h3><ul>
-<li>功能单一。一个方法只做一件事</li>
-<li>专属的命名空间，遵循组件库的规范，不与其他组件冲突</li>
-<li>开箱即用。测试方便</li>
-<li>文档完善。</li>
-</ul>
-<h2 id="Composer"><a href="#Composer" class="headerlink" title="Composer"></a>Composer</h2><h2 id="通过composer，我们可以使用大量的第三方库，而无需自己造轮子-更加快速提高开发效率。如果说Packagist是组件库，那么composer就是PHP组件管理工具了。composer是PHP组件的依赖管理器，它在命令行中使用，简单而又方便。所以，推荐phper必须学会composer。"><a href="#通过composer，我们可以使用大量的第三方库，而无需自己造轮子-更加快速提高开发效率。如果说Packagist是组件库，那么composer就是PHP组件管理工具了。composer是PHP组件的依赖管理器，它在命令行中使用，简单而又方便。所以，推荐phper必须学会composer。" class="headerlink" title="通过composer，我们可以使用大量的第三方库，而无需自己造轮子,更加快速提高开发效率。如果说Packagist是组件库，那么composer就是PHP组件管理工具了。composer是PHP组件的依赖管理器，它在命令行中使用，简单而又方便。所以，推荐phper必须学会composer。"></a>通过<code>composer</code>，我们可以使用大量的第三方库，而无需自己造轮子,更加快速提高开发效率。如果说Packagist是组件库，那么composer就是PHP组件管理工具了。composer是PHP组件的依赖管理器，它在命令行中使用，简单而又方便。所以，推荐phper必须学会composer。</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>首先确认已经安装了php，并且把php设置在了全局变量中，打开命令行输入php -v能够看到php版本信息</p>
-<pre class=" language-php"><code class="language-php">php <span class="token operator">-</span>r "<span class="token function">copy</span><span class="token punctuation">(</span>'https<span class="token punctuation">:</span><span class="token comment" spellcheck="true">//install.phpcomposer.com/installer', 'composer-setup.php');"</span>
-
-php composer<span class="token operator">-</span>setup<span class="token punctuation">.</span>php
-
-php <span class="token operator">-</span>r <span class="token string">"unlink('composer-setup.php');"</span></code></pre>
-<p>如何全局安装请看:<br><img src="/medias/tmp/composer-1.png" alt=""></p>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>以下以<code>monolog</code>为例</p>
-<blockquote>
-<p>声明依赖<br>在项目目录下创建一个composer.json文件，指明依赖，比如，你的项目依赖 <code>monolog</code>：</p>
+<p><img src="/tmp/goule.jpg" alt=""></p>
+<p>如果你对此毫不在意，那么恭喜你，成为我们为你设定的一套”shiftcode”规则。如果你严格按照此规则进行编码，你会获得一个肯定：Good代码遵循改规则的示例，Bad表示没遵循该规则的示例。如下：</p>
+<h3 id="打字越少越好"><a href="#打字越少越好" class="headerlink" title="打字越少越好"></a>打字越少越好</h3><blockquote>
+<p>如果我们命名越简短，那么就会有越多的时间去思考代码逻辑问题。</p>
 </blockquote>
-<pre><code>{
-    &quot;require&quot;: {
-        &quot;monolog/monolog&quot;: &quot;1.2.*&quot;
+<p>Good👍</p>
+<pre><code>$a = 18;</code></pre><p>Bad👎🏻</p>
+<pre><code>$age = 18;</code></pre><h3 id="变量-函数混合命名风格"><a href="#变量-函数混合命名风格" class="headerlink" title="变量/函数混合命名风格"></a>变量/函数混合命名风格</h3><blockquote>
+<p>我们需要混合命名方法与变量，这样才能体现命名的多样性</p>
+</blockquote>
+<p>Good 👍</p>
+<pre><code>$wWidth = 640;
+$w_height = 480;</code></pre><p>Bad 👎🏻</p>
+<pre><code>$windowsWidth = 640;
+$windowsHeight = 480;</code></pre><h3 id="不写注释"><a href="#不写注释" class="headerlink" title="不写注释"></a>不写注释</h3><blockquote>
+<p>代码都看得懂，干嘛要写注释。或者说，反正我的代码没人看，干嘛要写注释？</p>
+</blockquote>
+<p>Good 👍🏻</p>
+<pre><code>const $cdr = 700;</code></pre><p>Bad 👎🏻</p>
+<pre><code>// 测试结果凭经验计算了700ms的时间。
+// @see: &lt;代码影响到的代码位置，需要case的地方&gt;
+const $callbackDebounceRate = 700;</code></pre><h3 id="尽可能不同的风格"><a href="#尽可能不同的风格" class="headerlink" title="尽可能不同的风格"></a>尽可能不同的风格</h3><blockquote>
+<p>为了代码的多样性，我们需要混合不同的格式，例如单引号或双引号。如果它们语义相同，那就应该混用</p>
+</blockquote>
+<p>Good 👍🏻</p>
+<pre><code>$g = [&#39;鞋子&#39;,&#39;衬衫&#39;,&#39;西装&#39;];
+$p = [&quot;188.9&quot;,&quot;268&quot;,&quot;899&quot;];</code></pre><p>Bad 👎🏻</p>
+<pre><code>$goods = [&#39;鞋子&#39;,&#39;衬衫&#39;,&#39;西装&#39;];
+$price = [&#39;188.9&#39;,&#39;268&#39;,&#39;899&#39;];</code></pre><h3 id="尽可能把代码写成一行"><a href="#尽可能把代码写成一行" class="headerlink" title="尽可能把代码写成一行"></a>尽可能把代码写成一行</h3><blockquote>
+<p>如果一系列方法函数都是一起实现的，那么代码也应该写在一起。</p>
+</blockquote>
+<p>Good 👍🏻</p>
+<pre><code>public function trim_aray_element($array){if(!is_array($array)){return $array;}return array_map([__CLASS__,&#39;trim_aray_element&#39;],$array)}</code></pre><p>Bad 👎🏻</p>
+<pre><code>/**
+* 对数组类型的各个元素进行trim处理
+* @param $array array
+*
+* @return array
+*/
+public function trim_aray_element($array){
+    if(!is_array($array)){
+        return $array;
     }
-}</code></pre><p>如果不需要使用https，可以这么写，以解决有时候因为https造成的问题</p>
-<pre><code>{
-    &quot;require&quot;: {
-        &quot;monolog/monolog&quot;: &quot;1.2.*&quot;
-    },
-    &quot;config&quot;: {
-        &quot;secure-http&quot;: false
+    return array_map([__CLASS__,&#39;trim_aray_element&#39;],$array)
+}</code></pre><h3 id="从来不避免代码的重复"><a href="#从来不避免代码的重复" class="headerlink" title="从来不避免代码的重复"></a>从来不避免代码的重复</h3><blockquote>
+<p>重复的代码总是必要的，复用它只会显得很啰嗦。</p>
+</blockquote>
+<p>Good 👍🏻</p>
+<pre><code>public function main(){
+    //do something
+        if($p){
+            foreach($p as $v){
+                $class = $v-&gt;getClass();
+                if ($class) { 
+                    $di_params[] = new $class-&gt;name;
+                }
+            }
+        }
+    //do something
+}
+public function someFunction(){
+    //do something
+        if($p){
+            foreach($p as $v){
+                $class = $v-&gt;getClass();
+                if ($class) { 
+                    $di_params[] = new $class-&gt;name;
+                }
+            }
+        }
+    //do something
+}</code></pre><p>Bad 👎🏻</p>
+<pre><code>public function main(){
+    //do something
+        $di_params = $this-&gt;getReflectInstance($params);
+    //do something
+}
+public function someFunction(){
+    //do something
+        $di_params = $this-&gt;getReflectInstance($params);
+    //do something
+}
+public function getReflectInstance($params){
+    $di_params = [];
+        if($params){
+            foreach($params as $param){
+                $class = $param-&gt;getClass();
+                if ($class) { 
+                    $di_params[] = new $class-&gt;name;
+                }
+            }
+        }
+    return $di_params;
+}</code></pre><h3 id="发现错误要保持静默"><a href="#发现错误要保持静默" class="headerlink" title="发现错误要保持静默"></a>发现错误要保持静默</h3><blockquote>
+<p>当发现错误时候，从来不去了解它。因此，不需要打印日志或者记录下来</p>
+</blockquote>
+<p>Good 👍🏻</p>
+<pre><code>try{
+//pending
+}catch(Exception $error)}{
+//not print
+}</code></pre><p>Bad 👎🏻</p>
+<pre><code>try{
+//pending
+}catch(Exception $error)}{
+    Log::error($error);
+}</code></pre><h3 id="广泛使用全局变量"><a href="#广泛使用全局变量" class="headerlink" title="广泛使用全局变量"></a>广泛使用全局变量</h3><blockquote>
+<p>使用全局变量，是代码质量优秀的表现</p>
+</blockquote>
+<p>Good 👍🏻</p>
+<pre><code>$c = 1;
+public function getCount(){
+  global $c; 
+  return $c * 2;
+}</code></pre><p>Bad 👎🏻</p>
+<pre><code>$count = 1;
+public function getCount($count){
+  return $count * 2;
+}</code></pre><h3 id="Type使用需谨慎"><a href="#Type使用需谨慎" class="headerlink" title="Type使用需谨慎"></a>Type使用需谨慎</h3><blockquote>
+<p>因为用户的输入都是”安全”的，所以从来不做数据类型的检查。</p>
+</blockquote>
+<p>Good 👍🏻</p>
+<pre><code>function sum($a,$b){
+  return $a + $b;
+}</code></pre><p>Bad 👎🏻</p>
+<pre><code>function sum(int $a,int $b) :int{
+  return $a + $b;
+}</code></pre><h3 id="嵌套的三角法则"><a href="#嵌套的三角法则" class="headerlink" title="嵌套的三角法则"></a>嵌套的三角法则</h3><blockquote>
+<p>因为用户的输入都是”安全”的，所以从来不做数据类型的检查。</p>
+</blockquote>
+<p>Good 👍🏻</p>
+<pre><code>function someFunction($a,$b,$c){
+    if($a === true){
+        if($b === true){
+            return true;
+        }else{
+            if($c === true){
+                return true;
+            }else{
+                return false;
+            }
+        }
     }
-}</code></pre><p>安装依赖<br>安装依赖非常简单，只需在项目目录下运行：<br><code>composer install</code><br>如果没有全局安装的话，则运行：<br><code>php composer.phar install</code><br>更新全部的包（谨慎使用）：<br><code>composer update</code></p>
-<p><em>注意：使用<code>composer install</code>或者<code>composer update</code>命令将会更新所有的扩展包，项目中使用需谨慎！！！</em></p>
-<h3 id="切换国内镜像"><a href="#切换国内镜像" class="headerlink" title="切换国内镜像"></a>切换国内镜像</h3><p>仅当前工程可使用该镜像地址：<br><code>composer config repo.packagist composer https://mirrors.aliyun.com/composer/</code><br>取消配置：<br><code>composer config --unset repos.packagist</code></p>
-<h3 id="命令汇总"><a href="#命令汇总" class="headerlink" title="命令汇总"></a>命令汇总</h3><pre><code>composer list  列出所有可用的命令
-composer init   初始化composer.json文件(就不劳我们自己费力创建啦)，会要求输入一些信息来描述我们当前的项目，还会要求输入依赖包
-composer install  读取composer.json内容，解析依赖关系，安装依赖包到vendor目录下
-composer update   更新最新的依赖关系到compsoer.lock文件，解析最新的依赖关系并且写入composer.lock文件
-composer search packagename 搜索包，packagename替换为你想查找的包名称
-composer require packagename 添加对packagename的依赖，packagename可修改为你想要的包名称
-composer show packagename
-composer self-update 更新 composer.phar文件自身
-composer dump-autoload --optimize 优化一下自动加载
-
-composer command --help 以上所有命令都可以添加 --help选项查看帮助信息</code></pre><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>1、利用 Composer 一步一步构建自己的 PHP 框架（一）——基础准备 - 岁寒<br><a href="https://lvwenhan.com/php/405.html" target="_blank" rel="noopener">https://lvwenhan.com/php/405.html</a></p>
-<p>2、PHP 开发者该知道的 5 个 Composer 小技巧 - 新闻 - SegmentFault<br><a href="https://segmentfault.com/a/1190000000355928" target="_blank" rel="noopener">https://segmentfault.com/a/1190000000355928</a></p>
-<p>3、Composer 中文网<br><a href="http://www.phpcomposer.com/" target="_blank" rel="noopener">http://www.phpcomposer.com/</a></p>
-<p>4、Packagist / Composer 中国全量镜像<br><a href="http://pkg.phpcomposer.com/" target="_blank" rel="noopener">http://pkg.phpcomposer.com/</a></p>
-<p>5、Composer安装<br><a href="https://getcomposer.org/download/" target="_blank" rel="noopener">https://getcomposer.org/download/</a></p>
-<p>6、composer之创建自己的包 - 始终不够<br><a href="http://www.huyanping.cn/composer%e4%b9%8b%e5%88%9b%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8c%85/" target="_blank" rel="noopener">http://www.huyanping.cn/composer%e4%b9%8b%e5%88%9b%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8c%85/</a></p>
-<p>7、php - 请各位分享或推荐一下composer里面好用的包 - SegmentFault<br><a href="https://segmentfault.com/q/1010000000484379" target="_blank" rel="noopener">https://segmentfault.com/q/1010000000484379</a></p>
-<p>8、给 CI 插上翅膀——在 CodeIgniter 2 中使用 Laravel Eloquent ORM - 岁寒<br><a href="https://lvwenhan.com/php/414.html" target="_blank" rel="noopener">https://lvwenhan.com/php/414.html</a></p>
-<p>9、Composer进阶使用 —— 常用命令和版本约束 - icyfire - SegmentFault<br><a href="https://segmentfault.com/a/1190000005898222" target="_blank" rel="noopener">https://segmentfault.com/a/1190000005898222</a></p>
-<p>10、Composer 国内加速：可用镜像列表 | Composer 技术论坛<br><a href="https://learnku.com/composer/wikis/30594" target="_blank" rel="noopener">https://learnku.com/composer/wikis/30594</a></p>
+}</code></pre><p>Bad 👎🏻</p>
+<pre><code>function someFunction(boolen $a,boolen $b,boolen $c): boolen{
+    return $a ^ $b ? true : $c;
+}</code></pre><h3 id="混合缩进"><a href="#混合缩进" class="headerlink" title="混合缩进"></a>混合缩进</h3><blockquote>
+<p>我们需要避免缩进，因为缩进回事复杂代码在编辑器中占用更多的空间。如果要采用，就采用混合缩进。</p>
+</blockquote>
+<p>Good 👍🏻</p>
+<pre><code>$f = [&#39;苹果&#39;,&#39;梨子&#39;,&#39;香蕉&#39;];
+    $c = [&#39;red&#39;,&#39;green&#39;,&#39;yellow&#39;];
+$fc = array_combine($c,$f);</code></pre><p>Bad 👎🏻</p>
+<pre><code>$fruits = [&#39;苹果&#39;,&#39;梨子&#39;,&#39;香蕉&#39;];
+$color  = [&#39;red&#39;,&#39;green&#39;,&#39;yellow&#39;];
+$fruits_color = array_combine($color,$fruits);</code></pre><h3 id="构建从来不更新README文档"><a href="#构建从来不更新README文档" class="headerlink" title="构建从来不更新README文档"></a>构建从来不更新README文档</h3><blockquote>
+<p>README文档的填写对于项目部署，从来不是很重要</p>
+</blockquote>
+<p>— 华丽的分割线 —</p>
+<p>以上由程序员github上发表的github，相信也能看得出纯粹恶作剧，但也令人发省。</p>
+<h2 id="代码简洁之道👍"><a href="#代码简洁之道👍" class="headerlink" title="代码简洁之道👍"></a>代码简洁之道👍</h2><blockquote>
+<p>如果你是个程序员，那么你应该清楚代码简洁主题的含义。</p>
+</blockquote>
+<p>相信在开发过程中，大家都有遇到过代码参数变量取名混淆、方法逻辑看不懂的情况，而因为代码规范问题吐槽不少。这也是这篇文章前面内容所吐槽的初衷(其实，是正好今天看到一篇github的文章：<a href=""https://github.com/trekhleb/state-of-the-art-shitcode"">最新的Shitcode原则</a>，觉得有趣就分享出来)。好的代码规范，能让其他开发更易看懂代码逻辑，而更乐意与你合作。这里推荐一本书：<a href=""http://www.torrent.org.cn/t-1488886"">《代码整洁之道》</a>。</p>
 
             </div>
             <hr/>
@@ -548,7 +659,7 @@ composer command --help 以上所有命令都可以添加 --help选项查看帮�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://damonnie.github.io/2019/12/12/dui-composer-de-ren-shi/">http://damonnie.github.io/2019/12/12/dui-composer-de-ren-shi/</a>
+                    <a href="http://damonnie.github.io/2020/02/23/dai-ma-jian-ji-zhi-dao/">http://damonnie.github.io/2020/02/23/dai-ma-jian-ji-zhi-dao/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -586,8 +697,8 @@ composer command --help 以上所有命令都可以添加 --help选项查看帮�
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/composer/">
-                                    <span class="chip bg-color">composer</span>
+                                <a href="/tags/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/">
+                                    <span class="chip bg-color">编程之道</span>
                                 </a>
                             
                         </div>
@@ -753,46 +864,48 @@ composer command --help 以上所有命令都可以添加 --help选项查看帮�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/12/22/chang-yong-de-bash-ming-ling-si-xi-tong-guan-li/">
+                <a href="/2020/02/23/dai-ma-jian-ji-zhi-dao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="常用的Bash命令四-系统管理">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="如何写出让人生厌的烂代码">
                         
-                        <span class="card-title">常用的Bash命令四-系统管理</span>
+                        <span class="card-title">如何写出让人生厌的烂代码</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            常用的Bash命令-系统管理,有top netstat等
+                            如果你是个程序员，那么你应该清楚代码简洁主题的含义。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/linux/" class="post-category">
-                                    linux
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/" class="post-category">
+                                    编程之道
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/linux/">
-                        <span class="chip bg-color">linux</span>
+                    <a href="/tags/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/">
+                        <span class="chip bg-color">编程之道</span>
                     </a>
                     
                 </div>
@@ -806,24 +919,24 @@ composer command --help 以上所有命令都可以添加 --help选项查看帮�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/11/si-ke-she-ji-mo-shi-gong-han-mo-shi/">
+                <a href="/2020/02/18/php-fan-she/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="死磕设计模式-工厂模式">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="php反射">
                         
-                        <span class="card-title">死磕设计模式-工厂模式</span>
+                        <span class="card-title">php反射</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            工厂模式中，接口或者基类只负责抽象工程接口，具体工厂交给客户去扩展。
+                            PHP中的反射API就像Java中的java.lang.reflect包一样。它由一系列可以分析属性、方法和类的内置类组成。 - 设计模式
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-18
                             </span>
                         <span class="publish-author">
                             
@@ -836,14 +949,6 @@ composer command --help 以上所有命令都可以添加 --help选项查看帮�
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                        <span class="chip bg-color">设计模式</span>
-                    </a>
-                    
                 </div>
                 
             </div>

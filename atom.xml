@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://damonnie.github.io/"/>
-  <updated>2020-02-20T12:53:18.408Z</updated>
+  <updated>2020-02-23T15:46:29.938Z</updated>
   <id>http://damonnie.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何写出让人生厌的烂代码</title>
+    <link href="http://damonnie.github.io/2020/02/23/dai-ma-jian-ji-zhi-dao/"/>
+    <id>http://damonnie.github.io/2020/02/23/dai-ma-jian-ji-zhi-dao/</id>
+    <published>2020-02-23T07:20:25.000Z</published>
+    <updated>2020-02-23T15:46:29.938Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;灵魂拷问&quot;&gt;&lt;a href=&quot;#灵魂拷问&quot; class=&quot;headerlink&quot; title=&quot;灵魂拷问&quot;&gt;&lt;/a&gt;灵魂拷问&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;你有担⼼过别⼈看到你代码会骂你吗？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程之道" scheme="http://damonnie.github.io/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+    
+      <category term="编程之道" scheme="http://damonnie.github.io/tags/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>php反射</title>
     <link href="http://damonnie.github.io/2020/02/18/php-fan-she/"/>
     <id>http://damonnie.github.io/2020/02/18/php-fan-she/</id>
     <published>2020-02-18T14:54:15.000Z</published>
-    <updated>2020-02-20T12:53:18.408Z</updated>
+    <updated>2020-02-23T15:03:04.098Z</updated>
     
     <summary type="html">
     
