@@ -331,29 +331,74 @@ bar_4bd67da367b650.43684647
 
 #### 8.字符串压缩
 当我们说到压缩，我们可能会想到文件压缩，其实，字符串也是可以压缩的。PHP提供了?[gzcompress()](http://php.net/manual/en/function.gzcompress.php "") 和[gzuncompress()](http://www.php.net/manual/en/function.gzuncompress.php "") 函数：
-|
-|1234567891011121314151617181920212223242526272829303132|`$string``=``"Lorem ipsum dolor sit amet, consectetur``adipiscing elit. Nunc ut elit id mi ultricies``adipiscing. Nulla facilisi. Praesent pulvinar,``sapien vel feugiat vestibulum, nulla dui pretium orci,``non ultricies elit lacus quis ante. Lorem ipsum dolor``sit amet, consectetur adipiscing elit. Aliquam``pretium ullamcorper urna quis iaculis. Etiam ac massa``sed turpis tempor luctus. Curabitur sed nibh eu elit``mollis congue. Praesent ipsum diam, consectetur vitae``ornare a, aliquam a nunc. In id magna pellentesque``tellus posuere adipiscing. Sed non mi metus, at lacinia``augue. Sed magna nisi, ornare in mollis in, mollis``sed nunc. Etiam at justo in leo congue mollis.``Nullam in neque eget metus hendrerit scelerisque``eu non enim. Ut malesuada lacus eu nulla bibendum``id euismod urna sodales. ";``$compressed``= gzcompress(``$string``);``echo``"Original size: "``.``strlen``(``$string``).``"\n"``;``/* 输出原始大小``Original size: 800``*/``echo``"Compressed size: "``.``strlen``(``$compressed``).``"\n"``;``/* 输出压缩后的大小``Compressed size: 418``*/``// 解压缩``$original``= gzuncompress(``$compressed``);`|
+````
+$string =
+"Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Nunc ut elit id mi ultricies
+adipiscing. Nulla facilisi. Praesent pulvinar,
+sapien vel feugiat vestibulum, nulla dui pretium orci,
+non ultricies elit lacus quis ante. Lorem ipsum dolor
+sit amet, consectetur adipiscing elit. Aliquam
+pretium ullamcorper urna quis iaculis. Etiam ac massa
+sed turpis tempor luctus. Curabitur sed nibh eu elit
+mollis congue. Praesent ipsum diam, consectetur vitae
+ornare a, aliquam a nunc. In id magna pellentesque
+tellus posuere adipiscing. Sed non mi metus, at lacinia
+augue. Sed magna nisi, ornare in mollis in, mollis
+sed nunc. Etiam at justo in leo congue mollis.
+Nullam in neque eget metus hendrerit scelerisque
+eu non enim. Ut malesuada lacus eu nulla bibendum
+id euismod urna sodales. ";
+ 
+$compressed = gzcompress($string);
+ 
+echo "Original size: ". strlen($string)."\n";
+/* 输出原始大小
+Original size: 800
+*/
+ 
+echo "Compressed size: ". strlen($compressed)."\n";
+/* 输出压缩后的大小
+Compressed size: 418
+*/
+ 
+// 解压缩
+$original = gzuncompress($compressed);
+````
 几乎有50% 压缩比率。同时，你还可以使用?[gzencode()](http://www.php.net/manual/en/function.gzencode.php "") 和[gzdecode()](http://www.php.net/manual/en/function.gzdecode.php "") 函数来压缩，只不用其用了不同的压缩算法。
 #### 9. 注册停止函数
 有一个函数叫做?[register_shutdown_function()](http://www.php.net/manual/en/function.register-shutdown-function.php "")，可以让你在整个脚本停时前运行代码。让我们看下面的一个示例：
-|
-|12345678910|`// capture the start time``$start_time``= microtime(true);``// do some stuff``// ...``// display how long the script took``echo``"execution took: "``.``(microtime(true) -``$start_time``).``" seconds."``;`|
+````
+// capture the start time
+$start_time = microtime(true);
+ 
+// do some stuff
+// ...
+ 
+// display how long the script took
+echo "execution took: ".
+        (microtime(true) - $start_time).
+        " seconds.";
+ ````
 上面这个示例只不过是用来计算某个函数运行的时间。然后，如果你在函数中间调用?[exit()](http://php.net/manual/en/function.exit.php "") 函数，那么你的最后的代码将不会被运行到。并且，如果该脚本在浏览器终止（用户按停止按钮），其也无法被运行。
 而当我们使用了register_shutdown_function()后，你的程序就算是在脚本被停止后也会被运行：
-|
-|1234567891011121314|`$start_time``= microtime(true);``register_shutdown_function(``"my_shutdown"``);``// do some stuff``// ...``function``my_shutdown() {``global` `$start_time``;``echo``"execution took: "``.``(microtime(true) -``$start_time``).``" seconds."``;``}`|
-文章：[来源](http://net.tutsplus.com/tutorials/php/9-useful-php-functions-and-features-you-need-to-know/ "")
-![](https://coolshell.cn//wp-content/uploads/2009/04/qrcode_for_gh_dd9d8c843f20_860-300x300.jpg "")![](https://coolshell.cn/wp-content/uploads/2019/04/coolshell.microapp.jpg "")
-关注CoolShell微信公众账号和微信小程序
-**（转载本站文章请注明作者和出处[酷 壳 – CoolShell](https://coolshell.cn/ "") ，请勿用于任何商业用途）**
-——=== <b>访问[酷壳404页面](http://coolshell.cn/404/ "") 寻找遗失儿童。** ===——
+````
+$start_time = microtime(true);
+ 
+register_shutdown_function('my_shutdown');
+ 
+// do some stuff
+// ...
+ 
+function my_shutdown() {
+    global $start_time;
+ 
+    echo "execution took: ".
+            (microtime(true) - $start_time).
+            " seconds.";
+}
+````
+这里，还有类似的函数fastcgi_finish_request有同样妙用，这里使用场景会有不同。
+* register_shutdown_function在一个请求request执行完毕时，调用这个注册的方法，可以捕捉error信息。
 
-### 相关文章
-*[![PHP v5.3的新鲜玩意](https://coolshell.cn/wp-content/plugins/wordpress-23-related-posts-plugin/static/thumbs/28.jpg "")](https://coolshell.cn/articles/11.html "")[PHP v5.3的新鲜玩意](https://coolshell.cn/articles/11.html "")
-*[![编程真难啊](https://coolshell.cn/wp-content/plugins/wordpress-23-related-posts-plugin/static/thumbs/15.jpg "")](https://coolshell.cn/articles/1391.html "")[编程真难啊](https://coolshell.cn/articles/1391.html "")
-*[![22个开源的PHP框架](https://coolshell.cn/wp-content/plugins/wordpress-23-related-posts-plugin/static/thumbs/21.jpg "")](https://coolshell.cn/articles/1086.html "")[22个开源的PHP框架](https://coolshell.cn/articles/1086.html "")
-*[![使用PHP的cURL库](https://coolshell.cn/wp-content/plugins/wordpress-23-related-posts-plugin/static/thumbs/29.jpg "")](https://coolshell.cn/articles/664.html "")[使用PHP的cURL库](https://coolshell.cn/articles/664.html "")
-*[![菜鸟学PHP之Smarty入门](https://coolshell.cn/wp-content/plugins/wordpress-23-related-posts-plugin/static/thumbs/25.jpg "")](https://coolshell.cn/articles/559.html "")[菜鸟学PHP之Smarty入门](https://coolshell.cn/articles/559.html "")
-*[![20 你应该知道的PHP库](https://coolshell.cn/wp-content/plugins/wordpress-23-related-posts-plugin/static/thumbs/4.jpg "")](https://coolshell.cn/articles/200.html "")[20 你应该知道的PHP库](https://coolshell.cn/articles/200.html "")
-![好烂啊](https://coolshell.cn/wp-content/plugins/wp-postratings/images/stars_crystal/rating_on.gif "好烂啊")![有点差](https://coolshell.cn/wp-content/plugins/wp-postratings/images/stars_crystal/rating_on.gif "有点差")![凑合看看](https://coolshell.cn/wp-content/plugins/wp-postratings/images/stars_crystal/rating_on.gif "凑合看看")![还不错](https://coolshell.cn/wp-content/plugins/wp-postratings/images/stars_crystal/rating_on.gif "还不错")![很精彩](https://coolshell.cn/wp-content/plugins/wp-postratings/images/stars_crystal/rating_half.gif "很精彩") (**15** 人打了分，平均分：**4.87** )
-![](https://coolshell.cn/wp-content/plugins/wp-postratings/images/loading.gif "")Loading...
+* fastcgi_finish_request 在调用这个方法后，再有任何输出内容，都不会输出后客户端。
