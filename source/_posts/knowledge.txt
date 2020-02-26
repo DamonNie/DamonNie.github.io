@@ -1,0 +1,26 @@
+别让自己墙了自己 
+https://coolshell.cn/articles/20276.html/comment-page-4#comment-2071002
+
+1、PHP生命周期(运行触发什么)
+2、TCP/IP
+第一次(A—>B)，SYN=1，seq=x
+
+第二次(B—>A)，SYN=1，ACK=1，seq=y，ack=x+1 //seq为什么是y，ack为什么是x+1？
+
+第三次(A—>B)，ACK=1，seq=x+1,ack=y+1 //seq为什么是x+1，ack为什么是y+1？
+SYN：同步标志，同步序列编号（Synchronize Sequence Numbers）栏有效，该标志仅在三次握手建立TCP连接时有效
+
+ACK为1表示确认号有效，为0表示报文中不包含确认信息，忽略确认号字段。
+
+seq是数据包本身的序列号；ack是期望对方继续发送的那个数据包的序列号。
+
+3、2019项目展望
+4、ShadowSocks 科学上网 http://www.crackedzone.com/get-network-through-shadowsocks.html
+5、ngork  http://www.crackedzone.com/privacy-ngrok-install.html
+6、生产环境部署  http://www.crackedzone.com/production-linux.html
+7、docker
+8、Leetcode
+9、nginx+fpm+php http://m.aluaa.com/articles/2019/06/23/1561265585716.html
+10、oauth2  http://m.aluaa.com/articles/2019/02/21/1550729844791.html
+
+11、ORM模型 http://m.aluaa.com/articles/2018/10/13/1539333775403.html

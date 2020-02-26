@@ -366,6 +366,7 @@ Compressed size: 418
 $original = gzuncompress($compressed);
 ````
 几乎有50% 压缩比率。同时，你还可以使用?[gzencode()](http://www.php.net/manual/en/function.gzencode.php "") 和[gzdecode()](http://www.php.net/manual/en/function.gzdecode.php "") 函数来压缩，只不用其用了不同的压缩算法。
+
 #### 9. 注册停止函数
 有一个函数叫做?[register_shutdown_function()](http://www.php.net/manual/en/function.register-shutdown-function.php "")，可以让你在整个脚本停时前运行代码。让我们看下面的一个示例：
 ````
