@@ -1,5 +1,7 @@
 别让自己墙了自己 
 https://coolshell.cn/articles/20276.html/comment-page-4#comment-2071002
+产品经理
+http://m.aluaa.com/articles/2018/10/13/1539333775249.html
 
 1、PHP生命周期(运行触发什么)
 2、TCP/IP
@@ -24,3 +26,46 @@ seq是数据包本身的序列号；ack是期望对方继续发送的那个数�
 10、oauth2  http://m.aluaa.com/articles/2019/02/21/1550729844791.html
 
 11、ORM模型 http://m.aluaa.com/articles/2018/10/13/1539333775403.html
+12、http响应主体 
+    http://m.aluaa.com/articles/2018/10/13/1539333775397.html
+    https://coolshell.cn/articles/19840.html
+13 http tcp http://m.aluaa.com/articles/2018/10/13/1539333775395.html
+14、编码套路 http://m.aluaa.com/articles/2018/10/13/1539333775357.html
+15、PHP编码规范 
+    http://m.aluaa.com/articles/2018/10/13/1539333775314.html
+    http://m.aluaa.com/articles/2018/10/13/1539333775325.html
+    http://m.aluaa.com/articles/2018/10/13/1539333775326.html
+    http://m.aluaa.com/articles/2018/10/13/1539333775313.html
+    http://m.aluaa.com/articles/2018/10/13/1539333775127.html
+16、优秀的程序员该有的素质
+    http://m.aluaa.com/articles/2018/10/13/1539333775311.html
+17、this self parent
+    http://m.aluaa.com/articles/2018/10/13/1539333775304.html
+18、php高级程序员如何度过面试关
+    http://m.aluaa.com/articles/2018/10/13/1539333775303.html
+19、面向对象
+    http://m.aluaa.com/articles/2018/10/13/1539333775300.html
+20、session_start()问题解疑 有更新！
+    http://m.aluaa.com/articles/2018/10/13/1539333775126.html
+21、https 如何免费的让网站启用HTTPS！
+    https://coolshell.cn/articles/18094.html
+22、从“黑掉GITHUB”学WEB安全开发 (这里时间久远但却仍然开发没有注意到的地方)
+    https://coolshell.cn/articles/11021.html
+23、为那些仍然在加班线上的互联网者们的效率，打上问号
+    https://coolshell.cn/articles/10217.html
+24、Html渲染
+    https://coolshell.cn/articles/9666.html
+25、性能调优
+    https://coolshell.cn/articles/7490.html
+26、TCP三次握手(如何通俗易懂的讲清楚TCP)
+    https://coolshell.cn/articles/11564.html
+    https://coolshell.cn/articles/11609.html
+
+
+大牛们的文章列表
+https://blog.littlebill.me/2013/04/technology.html
+缓存更新套路
+http://caitui.fun/2019/07/30/%e7%bc%93%e5%ad%98%e6%9b%b4%e6%96%b0%e7%9a%84%e5%a5%97%e8%b7%af/
+https://www.jqhtml.com/39177.html
+
+
