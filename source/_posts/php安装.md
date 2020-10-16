@@ -1,47 +1,211 @@
 ## PHP 安装
 
-> 工具准备：Linux服务器及shell终端
+## 下载`PHP 7`源码
 
-yum install 略。
+ 直奔 `PHP` 的官方网站： [php.net](http://php.net/) 
 
-这里，我们使用[php的官方文档]( http://php.net/manual/en/install.php )进行编辑安装，按照提示首先选择[版本]( https://www.php.net/downloads ) 这里，我们选择7.3.17
+在下面，我们可以看到：
 
-<img src="C:\Users\W9004022\Desktop\归档资料\PHP7.3.17.png" alt="PHP7.3.17" style="zoom:75%;" />
+- php-7.1.1.tar.bz2 (sig) [15,405Kb] 19 Jan 2017
+- php-7.1.1.tar.gz (sig) [19,800Kb] 19 Jan 2017
+- php-7.1.1.tar.xz (sig) [12,467Kb] 19 Jan 2017
 
-* 下载php安装包
-`wget  https://www.php.net/distributions/php-7.3.17.tar.gz`
-* 解压
-`tar -zxvf php-7.3.17.tar.gz`
-* 安装前准备工具包
-`yum install gcc gcc++ libxml2-devel`
-* 进入目录，编译
-  `cd php-7.3.17 && ./configure --prefix = / usr / local / php --with-curl = / usr / local / curl --with-freetype-dir --with-gd --with-gettext --with-iconv-dir- -with-kerberos --with-libdir = lib64 --with-libxml-dir --with-mysqli --with-openssl --with-pcre-regex --with-pdo-mysql --with-pdo-sqlite- -with-pear --with-png-dir --with-xmlrpc --with-xsl --with-zlib --enable-fpm --enable-bcmath --enable-libxml --enable-inline-optimization- enable-mbregex --enable-mbstring --enable-opcache --enable-pcntl --enable-shmop --enable-soap --enable-sockets --enable-sysvsem --enable-xml --enable-zip`
-  注意：
+ 用你的 `wget` 或者 `curl` 去下载吧。任选一个命令 
 
-  --prefix =安装目录
-  --with-使用包名称[=包目录]
-  --enable-需要激活的功能
+```
+wget http://cn2.php.net/get/php-7.1.1.tar.bz2/from/this/mirror
+curl http://cn2.php.net/get/php-7.1.1.tar.bz2/from/this/mirror -o php-7.1.1.tar.bz2
+```
 
-* 安装
-  `make install && make`
-  
-* 配置
-````
-1) 配置php.ini，这是php的配置文件：cp /home/damon/php-7.3.17/php.ini-development /usr/local/php/lib/php.ini
+## 安装必要的库
 
-2) 配置php-fpm.conf，这是php-fpm配置文件：cp /usr/local/php/etc/php-fpm.conf.default /usr/local/php/etc/php-fpm.conf
+ 熟悉编译安装软件的老司机肯定记得，在 `./configure` 之前一定要装些什么。 
 
-3)配置www.conf，配置用户的文件：cp etc/php-fpm.d/www.conf.default etc/php-fpm.d/www.conf
+不然有可能会碰到下面的话：
 
-4)将php-fpm启动文件复制到init.d文件夹中一个方便启动php：cp -R sbin/php-fpm /etc/init.d/php-fpm
-````
+```
+configure: error: xml2-config not found. Please check your libxml2 installation.
+```
 
-* 启动
+我们这里使用`yum`安装
 
-  ` 执行命令：/etc/init.d/php-fpm ，通过 ps -ef|grep php`
+```
+`yum -y install gcc g++ libxml2 libxml2-devel openssl openssl-devel bzip2 bzip2-devel libcurl libcurl-devel libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel gmp gmp-devel libmcrypt libmcrypt-devel readline readline-devel libxslt libxslt-devel`
+```
 
-## 配置Nginx，支持php
+## 编译PHP
 
-> 配置nginx，略。
+> 这里需要注意的是enable-gd-native-ttf 新版本里面已经废弃，
+> 同时，旧版本里
+> --with-freetype-dir \
+> --with-jpeg-dir\
+> --with-png-dir \
+> 改为
+> --with-freetype \
+> --with-jpeg \
+> --with-png \
 
-1)  https://zhuanlan.zhihu.com/p/98990924 
+```
+./configure \
+--prefix=/usr/local/php \
+--with-config-file-path=/etc \
+--enable-fpm \
+--enable-inline-optimization \
+--disable-debug \
+--disable-rpath \
+--enable-shared  \
+--enable-soap \
+--with-libxml-dir \
+--with-xmlrpc \
+--with-openssl \
+--with-mcrypt \
+--with-mhash \
+--with-pcre-regex \
+--with-sqlite3 \
+--with-zlib \
+--enable-bcmath \
+--with-iconv \
+--with-bz2 \
+--enable-calendar \
+--with-curl \
+--with-cdb \
+--enable-dom \
+--enable-exif \
+--enable-fileinfo \
+--enable-filter \
+--with-pcre-dir \
+--enable-ftp \
+--with-gd \
+--with-openssl-dir \
+--with-jpeg \
+--with-png \
+--with-zlib-dir  \
+--with-freetype-dir \
+--enable-gd-jis-conv \
+--with-gettext \
+--with-gmp \
+--with-mhash \
+--enable-json \
+--enable-mbstring \
+--enable-mbregex \
+--enable-mbregex-backtrack \
+--with-libmbfl \
+--with-onig \
+--enable-pdo \
+--with-mysqli=mysqlnd \
+--with-pdo-mysql=mysqlnd \
+--with-zlib-dir \
+--with-pdo-sqlite \
+--with-readline \
+--enable-session \
+--enable-shmop \
+--enable-simplexml \
+--enable-sockets  \
+--enable-sysvmsg \
+--enable-sysvsem \
+--enable-sysvshm \
+--enable-wddx \
+--with-libxml-dir \
+--with-xsl \
+--enable-zip \
+--enable-mysqlnd-compression-support \
+--with-pear \
+--enable-opcache
+```
+
+## 安装`PHP 7`
+
+> 一行搞定
+
+```
+make && make install
+```
+## 配置 PHP
+```
+vi /etc/profile
+```
+
+在文件的最末尾填上：
+
+```
+PATH=$PATH:/usr/local/php/bin
+export PATH
+```
+
+保存修改，然后执行 `source /etc/profile` 使环境变量配置生效。
+
+如果某个用户想要定义自己的命令别名，可以将命令添加到当前目录中的文件.bash_profile中。
+
+```
+echo "alias cdt='cd /APP/isTester.com'">>~/.bash_profile
+```
+
+
+
+## 安装 `PHP-FPM`
+
+```
+cp sapi/fpm/init.d.php-fpm /usr/local/bin/php-fpm
+chmod +x /usr/local/bin/php-fpm
+```
+
+## 初始化 `PHP` 和 `PHP-FPM` 的配置
+
+```
+cp php.ini-production /etc/php.ini
+cp /usr/local/php/etc/php-fpm.conf.default /usr/local/php/etc/php-fpm.conf
+cp /usr/local/php/etc/php-fpm.d/www.conf.default /usr/local/php/etc/php-fpm.d/www.conf
+```
+
+### 严格控制权限管理
+
+*   假设我们用 `website` 用户组管控网站,`site-www`账号来管理，那就先用 `groupadd website` 创建好这个用户组。
+
+  然后就创建用户 `site-www`： `adduser -g website site-www`
+
+*  还有一步就是 `vi /etc/passwd` 把 `site-www` 的 `bash` 改回 `/sbin/nologin` 来防止这个用户被登录。 
+
+* 修改` /usr/local/php/etc/php-fpm.d/www.conf ` ，原内容如下 
+
+```
+; Unix user/group of processes
+; Note: The user is mandatory. If the group is not set, the default user's group
+;  will be used.
+user = nginx
+group = nginx
+```
+
+- `user` 改成 `site-www`
+- `group` 改成 `website`
+
+### 开机自启动 `PHP-FPM`
+
+先添加服务：
+
+```
+vim /etc/systemd/system/php-fpm.service
+```
+
+内容加上：
+
+```
+[Unit]
+Description=The PHP FastCGI Process Manager
+After=syslog.target network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/php-fpm start
+ExecReload=/usr/local/bin/php-fpm reload
+ExecStop=/usr/local/bin/php-fpm stop
+
+[Install]
+WantedBy=multi-user.target
+```
+
+保存服务配置之后，设置开机自启动：
+
+```
+systemctl enable php-fpm.service
+```
+
